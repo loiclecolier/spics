@@ -3,9 +3,68 @@
 @import 'libs/variables';
 
 * {
-  font-family: 'Tuffy', sans-serif;
+  font-family: $font-default;
 }
 
-html {
+html, body {
   font-size: 13px;
+  color: $color-txt-primary;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btnPrimary {
+  position: relative;
+  display: block;
+  color: $color-txt-contrast !important;
+  background: $color-bg-primary-btn;
+  border-radius: 5px;
+  box-shadow: 0px 8px 8px rgba(34, 34, 34, 0.2);
+  text-decoration: none;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $color-bg-primary-btn-hover;
+    border-radius: 5px;
+    z-index: -1;
+    transition: opacity .3s linear;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.btnSecondary {
+  display: block;
+  color: $color-txt-link;
+  background: $color-bg-secondary-btn;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(34, 34, 34, 0.2);
+  text-decoration: none;
+  width: 200px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+a, a:focus, a:visited, a:hover, a:active {
+  color: $color-txt-link;
+}
+
+a:hover {
+  color: $color-txt-link-hover;
 }

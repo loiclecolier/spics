@@ -3,7 +3,6 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import LogoBlanc from '../public/assets/icons/logo-spics-blanc.svg';
 import BurgerMenuIcon from '../public/assets/icons/burger-menu.svg';
-import CloseMenuIcon from '../public/assets/icons/close-menu.svg';
 import FacebookIcon from '../public/assets/icons/facebook-blanc.svg';
 import InstagramIcon from '../public/assets/icons/instagram-blanc.svg';
 import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
@@ -21,6 +20,7 @@ export default function Navbar() {
       <div className={`${style.navContent} ${toggle && style.active}`}>
 
         <nav className={style.navContent__menu}>
+          <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
           <ul>
             <li>
               <Link href="#services">
@@ -108,27 +108,23 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-
-      <header className={style.navbar}>
-        <Link href="/">
-          <a>
-            <Image
-              src={LogoBlanc}
-              alt="Logo Spics Blanc"
-              width={50}
-              height={50}
-            />
-          </a>
-        </Link>
-        <div onClick={handleNav} className={style.navbar__burger}>
-          {toggle ?
-            <span>&#10539;</span>
-          :
+      <div className={style.navbarContainer}>
+        <header className={style.navbar}>
+          <Link href="/">
+            <a>
+              <Image
+                src={LogoBlanc}
+                alt="Logo Spics Blanc"
+                width={50}
+                height={50}
+              />
+            </a>
+          </Link>
+          <div onClick={handleNav} className={style.navbar__burger}>
             <Image src={BurgerMenuIcon} alt="Ouvrir le menu mobile" width={30} height={30} />
-          }
-          
-        </div>
-      </header>
+          </div>
+        </header>
+      </div>
     </>
   );
 }
