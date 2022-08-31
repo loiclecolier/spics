@@ -1,0 +1,60 @@
+/*
+----------
+- COLORS -
+----------
+*/
+
+// Text
+$color-txt-primary: #444;
+$color-txt-secondary: #888;
+$color-txt-contrast: #FFF;
+$color-txt-link: linear-gradient(180deg, #349FDD 0%, #2647C5 100%);
+$color-txt-error: #E73939;
+
+// Background
+$color-bg-primary: #FFF;
+$color-bg-secondary: #EDF2FA;
+$color-bg-banner: radial-gradient(100% 100% at 50% 50%, rgba(44, 89, 155, 0.5) 0%, #2B77A3 100%);
+$color-bg-filigrane: rgba(255, 255, 255, 0.15);
+$color-bg-overlay-services: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+$color-bg-services: rgba(0, 38, 111, 0.5);
+$color-bg-primary-btn: linear-gradient(90deg, #2647C5 0%, #349FDD 100%);
+$color-bg-secondary-btn: #FFF;
+$color-bg-info: #D0EEFF;
+
+// Icons
+$color-icon-primary-l-to-r: linear-gradient(90deg, #2647C5 0%, #349FDD 100%);
+$color-icon-primary-r-to-l: linear-gradient(90deg, #349FDD 0%, #2647C5 100%);
+$color-icon-secondary: linear-gradient(180deg, rgba(38, 71, 197, 0.2) 0%, rgba(52, 159, 221, 0.2) 100%);
+$color-icon-contrast: #FFF;
+
+// Inputs
+$color-input-border: #BFBFBF;
+$color-input-border-focus: #444;
+$color-input-border-error: #E73939;
+$color-input-bg: #FFF;
+
+
+/*
+---------
+- SIZES -
+---------
+*/
+
+// Text mobile
+$size-txt-mobile: 13px;
+$size-txt-mobile-btn: 1rem;
+
+// Text desktop
+$size-txt-desktop: 1.25rem;
+$size-txt-desktop-btn: 1.9rem;
+
+
+/*
+---------
+- FONTS -
+---------
+*/
+
+$font-spics: 'Tw Cen MT', serif;
+$font-default: 'Tuffy';
