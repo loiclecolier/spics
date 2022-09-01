@@ -33,8 +33,8 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/developpement-web">
-                    <a>Développement web</a>
+                  <Link href="/creation-site-web">
+                    <a>Création de site web</a>
                   </Link>
                 </li>
                 <li>
@@ -50,19 +50,13 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Link href="#valeurs">
-                <a>&#10621; &#8239; VALEURS</a>
-              </Link>
+              <a href="#valeurs">&#10621; &#8239; VALEURS</a>
             </li>
             <li>
-              <Link href="#realisations">
-                <a>&#10621; &#8239; RÉALISATIONS</a>
-              </Link>
+              <a href="#realisations">&#10621; &#8239; RÉALISATIONS</a>
             </li>
             <li>
-              <Link href="#contact">
-                <a>&#10621; &#8239; CONTACT</a>
-              </Link>
+              <a href="#contact">&#10621; &#8239; CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -70,25 +64,19 @@ export default function Navbar() {
         <nav className={style.navContent__menuSocialNetworks}>
           <ul>
             <li>
-              <Link href="#">
-                <a>
-                  <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
-                </a>
-              </Link>
+              <a target="_blank" href="#">
+                <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
+              </a>
             </li>
             <li>
-              <Link href="#">
-                <a>
-                  <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
-                </a>
-              </Link>
+              <a target="_blank" href="#">
+                <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
+              </a>
             </li>
             <li>
-              <Link href="#">
-                <a>
-                  <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
-                </a>
-              </Link>
+              <a target="_blank" href="#">
+                <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
+              </a>
             </li>
           </ul>
         </nav>
@@ -108,23 +96,22 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className={style.navbarContainer}>
-        <header className={style.navbar}>
-          <Link href="/">
-            <a>
-              <Image
-                src={LogoBlanc}
-                alt="Logo Spics Blanc"
-                width={50}
-                height={50}
-              />
-            </a>
-          </Link>
-          <div onClick={handleNav} className={style.navbar__burger}>
-            <Image src={BurgerMenuIcon} alt="Ouvrir le menu mobile" width={30} height={30} />
-          </div>
-        </header>
-      </div>
+
+      <header className={style.navbar}>
+        <Link href="/">
+          <a>
+            <Image
+              src={LogoBlanc}
+              alt="Logo Spics Blanc"
+              width={50}
+              height={50}
+            />
+          </a>
+        </Link>
+        <div onClick={handleNav} className={style.navbar__burger}>
+          <Image src={BurgerMenuIcon} alt="Ouvrir le menu mobile" width={30} height={30} />
+        </div>
+      </header>
     </>
   );
 }

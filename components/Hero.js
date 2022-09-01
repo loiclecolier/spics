@@ -5,7 +5,6 @@ import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
 import ScrollDownIcon from '../public/assets/icons/scroll-down.svg';
 
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Hero() {
@@ -14,25 +13,19 @@ export default function Hero() {
         <nav className={style.hero__menuSocialNetworks}>
           <ul>
             <li>
-              <Link href="#">
-                <a>
-                  <Image src={FacebookIcon} alt="Page Facebook Spics" width={15} height={15} />
-                </a>
-              </Link>
+              <a target="_blank" href="#">
+                <Image src={FacebookIcon} alt="Page Facebook Spics" width={15} height={15} />
+              </a>
             </li>
             <li>
-              <Link href="#">
-                <a>
-                  <Image src={InstagramIcon} alt="Instagram Spics" width={15} height={15} />
-                </a>
-              </Link>
+              <a target="_blank" href="#">
+                <Image src={InstagramIcon} alt="Instagram Spics" width={15} height={15} />
+              </a>
             </li>
             <li>
-              <Link href="#">
-                <a>
-                  <Image src={LinkedinIcon} alt="LinkedIn Spics" width={15} height={15} />
-                </a>
-              </Link>
+              <a target="_blank" href="#">
+                <Image src={LinkedinIcon} alt="LinkedIn Spics" width={15} height={15} />
+              </a>
             </li>
           </ul>
         </nav>
@@ -43,20 +36,14 @@ export default function Hero() {
                 <h2>Au service des indépendants et des <br/>petites entreprises</h2>
             </div>
             <div className={style.hero__main__cta}>
-                <Link href="#contact">
-                    <a className="btnPrimary">Parler de votre projet</a>
-                </Link>
-                <Link href="#realisations">
-                    <a className="btnSecondary">Voir nos réalisations<div></div></a>
-                </Link>
+              <a href="#contact" className="btnPrimary">Parler de votre projet</a>
+              <a href="#realisations" className="btnSecondary">Voir nos réalisations<div></div></a>
             </div>
         </main>
-        <Link href="#services">
-            <a className={style.hero__discover}>
-                <Image src={ScrollDownIcon} alt="" aria-hidden="true" focusable="false" width={20} height={20}/>
-                <span>DÉCOUVRIR SPICS</span>
-            </a>
-        </Link>
+        <a href="#services" className={style.hero__discover}>
+            <Image src={ScrollDownIcon} alt="" aria-hidden="true" focusable="false" width={20} height={20}/>
+            <span>DÉCOUVRIR SPICS</span>
+        </a>
     </div>
   )
 }

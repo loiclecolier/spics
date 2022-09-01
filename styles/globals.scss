@@ -15,6 +15,14 @@ a {
   text-decoration: none;
 }
 
+a, a:focus, a:visited, a:hover, a:active {
+  color: $color-txt-link;
+}
+
+a:hover {
+  color: $color-txt-link-hover;
+}
+
 .btnPrimary {
   position: relative;
   display: block;
@@ -24,7 +32,7 @@ a {
   box-shadow: 0px 8px 8px rgba(34, 34, 34, 0.2);
   text-decoration: none;
   width: 200px;
-  padding: 10px;
+  padding: 12.5px 10px 10px 10px;
   font-weight: bold;
   font-size: 13px;
   z-index: 1;
@@ -56,15 +64,33 @@ a {
   box-shadow: 0px 4px 8px rgba(34, 34, 34, 0.2);
   text-decoration: none;
   width: 200px;
-  padding: 10px 10px;
+  padding: 12.5px 10px 10px 10px;
   font-weight: bold;
   font-size: 13px;
 }
 
-a, a:focus, a:visited, a:hover, a:active {
-  color: $color-txt-link;
+.titleSection {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
 
-a:hover {
-  color: $color-txt-link-hover;
+.titleSection::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: $color-txt-primary;
+  margin: 5px auto 0;
+}
+
+@media screen and (min-width: 375px) {
+  .titleSection {
+    font-size: 30px;
+  }
+  
+  .titleSection::after {
+    width: 80px;
+    margin: 7.5px auto 0;
+  }
 }
