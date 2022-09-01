@@ -1,0 +1,55 @@
+@import 'libs/variables';
+
+.rocket {
+    display: block;
+    margin: 35px 25px -35px;
+}
+
+.CTAContact {
+    background: $color-bg-secondary;
+    padding: 50px 25px 30px;
+
+    &__title {
+        color: $color-txt-primary;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    &__description {
+        margin-top: 12px;
+        line-height: 1.4em;
+    }
+
+    &__button {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .rocket {
+        margin: 40px 25px -40px;
+
+        img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+    }
+    
+    .CTAContact {
+        padding: 60px 25px 30px;
+    
+        &__title {
+            font-size: 25px;
+        }
+    
+        &__description {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    
+        &__button {
+            font-size: 16px;
+            width: 250px;
+        }
+    }
+}

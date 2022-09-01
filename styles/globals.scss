@@ -36,6 +36,7 @@ a:hover {
   font-weight: bold;
   font-size: 13px;
   z-index: 1;
+  text-align: center;
 
   &::before {
     position: absolute;
@@ -67,6 +68,7 @@ a:hover {
   padding: 12.5px 10px 10px 10px;
   font-weight: bold;
   font-size: 13px;
+  text-align: center;
 }
 
 .titleSection {
