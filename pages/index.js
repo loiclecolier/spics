@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import CTAContact from '../components/CTAContact';
+import Valeurs from '../components/Valeurs';
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
       <main>
         <Services />
         <CTAContact />
+        <Valeurs />
       </main>
     </div>
   );
