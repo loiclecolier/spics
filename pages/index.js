@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import CTAContact from '../components/CTAContact';
 import Valeurs from '../components/Valeurs';
+import Realisations from '../components/Realisations';
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
         <Services />
         <CTAContact />
         <Valeurs />
+        <Realisations />
       </main>
     </div>
   );

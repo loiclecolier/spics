@@ -53,3 +53,28 @@
         }
     }
 }
+
+@media screen and (min-width: 500px) {
+    .rocket {
+        margin: 45px 10vw -45px;
+
+        img {
+            width: 80px !important;
+            height: 80px !important;
+        }
+    }
+
+    .CTAContact {
+        text-align: center;
+
+        &__description {
+            span {
+                display: block;
+            }
+        }
+
+        &__button {
+            margin: 25px auto 0;
+        }
+    }
+}

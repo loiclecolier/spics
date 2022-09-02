@@ -12,7 +12,8 @@ export default function CTAContact() {
       <div className={style.CTAContact}>
           <h2 className={style.CTAContact__title}>Donnez vie à votre projet !</h2>
           <p className={style.CTAContact__description}>
-              Un site vitrine ? Un e-commerce ? Un site de réservation en ligne ? Un café pour en discuter ? N’attendez plus et contactez-nous !
+              Un site vitrine ? Un e-commerce ? Un site de réservation en ligne ?
+              <span> Un café pour en discuter ? N’attendez plus et contactez-nous !</span>
           </p>
           <a href="#contact" className={`btnPrimary ${style.CTAContact__button}`}>
               Parler de votre projet
