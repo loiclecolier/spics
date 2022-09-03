@@ -30,7 +30,13 @@ export default function Realisations() {
   return (
     <section id="realisations" className={style.realisations}>
         <h2 className={`titleSection ${style.realisations__title}`}>Nos Réalisations</h2>
-        <Carousel showStatus={false} className={style.realisations__carousel}>
+        <Carousel
+          showStatus={false}
+          showThumbs={false}
+          preventMovementUntilSwipeScrollTolerance={true}
+          swipeScrollTolerance={50}
+          className={style.realisations__carousel}
+        >
             <Realisation 
               link="https://loiclecolier.github.io/jinkgo/"
               title="Jinkgo"
