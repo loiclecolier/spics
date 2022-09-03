@@ -1,6 +1,6 @@
 import style from '../styles/modules/Navbar.module.scss'
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LogoBlanc from '../public/assets/icons/logo-spics-blanc.svg';
 import BurgerMenuIcon from '../public/assets/icons/burger-menu.svg';
 import FacebookIcon from '../public/assets/icons/facebook-blanc.svg';
@@ -15,15 +15,17 @@ export default function Navbar() {
     setToggle(!toggle);
   };
 
+  const size = useWindowSize();
+
   return (
     <>
-      <div className={`${style.navContent} ${toggle && style.active}`}>
+      <div className={`${style.navContent} ${toggle && style.active}`} style={{height: `${size.height}px`}}>
 
         <nav className={style.navContent__menu}>
           <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
           <ul>
             <li>
-              <a href="#services">&#10621; &#8239; SERVICES</a>
+              <a href="#services">SERVICES</a>
               <ul className={style.navContent__menu__submenu}>
                 <li>
                   <Link href="/ux-ui-design">
@@ -48,13 +50,13 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <a href="#valeurs">&#10621; &#8239; VALEURS</a>
+              <a href="#valeurs">VALEURS</a>
             </li>
             <li>
-              <a href="#realisations">&#10621; &#8239; RÉALISATIONS</a>
+              <a href="#realisations">RÉALISATIONS</a>
             </li>
             <li>
-              <a href="#contact">&#10621; &#8239; CONTACT</a>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -112,4 +114,30 @@ export default function Navbar() {
       </header>
     </>
   );
+}
+
+// Tricks pour mettre le hero à 100vh avec Next.js (fonctionnel sur mobile)
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      window.addEventListener("resize", handleResize);
+     
+      handleResize();
+    
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return windowSize;
 }

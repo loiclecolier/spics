@@ -8,6 +8,10 @@
         max-width: 650px;
         margin: auto;
 
+        textarea {
+            resize: none;
+        }
+
         input, textarea {
             display: block;
             width: 100%;

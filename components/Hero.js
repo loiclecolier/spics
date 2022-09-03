@@ -4,12 +4,14 @@ import InstagramIcon from '../public/assets/icons/instagram-blanc.svg';
 import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
 import ScrollDownIcon from '../public/assets/icons/scroll-down.svg';
 
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 
 export default function Hero() {
+  const size = useWindowSize();
+
   return (
-    <div className={style.hero}>
+    <div className={style.hero} style={{height: `${size.height}px`}}>
         <nav className={style.hero__menuSocialNetworks}>
           <ul>
             <li>
@@ -46,4 +48,30 @@ export default function Hero() {
         </a>
     </div>
   )
+}
+
+// Tricks pour mettre le hero à 100vh avec Next.js (fonctionnel sur mobile)
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      window.addEventListener("resize", handleResize);
+     
+      handleResize();
+    
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return windowSize;
 }
