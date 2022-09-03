@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import CTAContact from '../components/CTAContact';
 import Valeurs from '../components/Valeurs';
 import Realisations from '../components/Realisations';
+import Contact from '../components/Contact';
 
 export default function Home() {
   return (
@@ -46,9 +47,10 @@ export default function Home() {
 
       <main>
         <Services />
-        <CTAContact />
+        <CTAContact hasButton={true} />
         <Valeurs />
         <Realisations />
+        <Contact />
       </main>
     </div>
   );

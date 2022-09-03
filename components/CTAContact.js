@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Rocket from '../public/assets/icons/rocket.svg';
 
-export default function CTAContact() {
+export default function CTAContact(props) {
   return (
     <>
       <div className={style.rocket}>
@@ -15,9 +15,11 @@ export default function CTAContact() {
               Un site vitrine ? Un e-commerce ? Un site de réservation en ligne ?
               <span> Un café pour en discuter ? N’attendez plus et contactez-nous !</span>
           </p>
-          <a href="#contact" className={`btnPrimary ${style.CTAContact__button}`}>
-              Parler de votre projet
-          </a>
+          {props.hasButton &&
+            <a href="#contact" className={`btnPrimary ${style.CTAContact__button}`}>
+                Parler de votre projet
+            </a>
+          }
       </div>
     </>
   )
