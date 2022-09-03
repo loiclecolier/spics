@@ -1,0 +1,153 @@
+@import 'libs/variables';
+
+.title {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    width: fit-content;
+}
+
+.footer {
+    background-color: $color-bg-secondary;
+    padding: 25px 25px 15px 25px;
+
+    &__block {
+        width: fit-content;
+        margin: 0 auto 30px;
+        transform: translateX(-50%);
+
+        &__contact {
+            margin-bottom: 30px;
+
+            address {
+                margin-top: 5px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 100px;
+                    width: 100%;
+                    max-width: 270px;
+
+                    li {
+                        margin-top: 10px;
+                        font-style: normal;
+                        width: 100%;
+                        max-width: 135px;
+
+                        &:last-child {
+                            line-height: 1.5em;
+                        }
+
+                        a {
+                            color: $color-txt-primary;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__menuSocialNetworks {
+                margin-top: -15px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__menu {
+
+            nav {
+                margin-top: 5px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 100px;
+                    width: 100%;
+                    max-width: 270px;
+
+                    li {
+                        margin-top: 10px;
+                        font-style: normal;
+                        width: 100%;
+                        max-width: 135px;
+
+                        &:last-child {
+                            line-height: 1.5em;
+                        }
+
+                        a {
+                            color: $color-txt-primary;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__copyright {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 10px;
+
+        &__symbol {
+            font-family: sans-serif;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer {
+        &__block {
+            transform: translateX(0);
+    
+            &__contact {
+                address {
+                    ul {
+                        width: fit-content;
+                        height: 100% !important;
+                    }
+                }
+    
+                &__menuSocialNetworks {
+                    margin-top: 10px;
+                    ul {
+                        height: 100% !important;
+                    }
+                }
+            }
+    
+            &__menu {
+                nav {
+                    ul {
+                        width: fit-content;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

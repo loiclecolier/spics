@@ -23,9 +23,7 @@ export default function Navbar() {
           <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
           <ul>
             <li>
-              <Link href="#services">
-                <a>&#10621; &#8239; SERVICES</a>
-              </Link>
+              <a href="#services">&#10621; &#8239; SERVICES</a>
               <ul className={style.navContent__menu__submenu}>
                 <li>
                   <Link href="/ux-ui-design">

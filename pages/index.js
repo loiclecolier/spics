@@ -6,6 +6,7 @@ import CTAContact from '../components/CTAContact';
 import Valeurs from '../components/Valeurs';
 import Realisations from '../components/Realisations';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -52,6 +53,9 @@ export default function Home() {
         <Realisations />
         <Contact />
       </main>
+
+      <Footer />
+      
     </div>
   );
 }
