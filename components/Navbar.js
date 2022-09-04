@@ -9,13 +9,34 @@ import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
 import Link from 'next/link';
 
 export default function Navbar() {
-  const [toggle, setToggle] = useState(false);
 
+  // close menu
+  const [toggle, setToggle] = useState(false);
   const handleNav = () => {
     setToggle(!toggle);
   };
 
+  // get screen size
   const size = useWindowSize();
+
+  // change nav when scrolling
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNavbar);
+
+    function changeNavbar () {
+      if (window.scrollY >= 70) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    }
+
+    return () => {
+      window.removeEventListener('scroll', changeNavbar);
+    }
+  }, []);
 
   return (
     <>
@@ -25,38 +46,38 @@ export default function Navbar() {
           <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
           <ul>
             <li>
-              <a href="#services">SERVICES</a>
+              <a href="#services" onClick={handleNav}>SERVICES</a>
               <ul className={style.navContent__menu__submenu}>
                 <li>
                   <Link href="/ux-ui-design">
-                    <a>UX / UI Design</a>
+                    <a onClick={handleNav}>UX / UI Design</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/creation-site-web">
-                    <a>Création de site web</a>
+                    <a onClick={handleNav}>Création de site web</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/referencement-seo">
-                    <a>Référencement (SEO)</a>
+                    <a onClick={handleNav}>Référencement (SEO)</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/hebergement-maintenance">
-                    <a>Hébergement & Maintenance</a>
+                    <a onClick={handleNav}>Hébergement & Maintenance</a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#valeurs">VALEURS</a>
+              <a href="#valeurs" onClick={handleNav}>VALEURS</a>
             </li>
             <li>
-              <a href="#realisations">RÉALISATIONS</a>
+              <a href="#realisations" onClick={handleNav}>RÉALISATIONS</a>
             </li>
             <li>
-              <a href="#contact">CONTACT</a>
+              <a href="#contact" onClick={handleNav}>CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -85,26 +106,26 @@ export default function Navbar() {
           <ul>
             <li>
               <Link href="/mentions-legales">
-                <a>Mentions légales</a>
+                <a onClick={handleNav}>Mentions légales</a>
               </Link>
             </li>
             <li>
               <Link href="/politique-confidentalite">
-                <a>Politique de confidentialité</a>
+                <a onClick={handleNav}>Politique de confidentialité</a>
               </Link>
             </li>
           </ul>
         </nav>
       </div>
 
-      <header className={style.navbar}>
+      <header className={scroll ? `${style.navbar} ${style.navbarScroll}` : `${style.navbar}`}>
         <Link href="/">
-          <a>
+          <a className={style.navbar__image}>
             <Image
               src={LogoBlanc}
               alt="Logo Spics Blanc"
-              width={50}
-              height={50}
+              width={35}
+              height={35}
             />
           </a>
         </Link>

@@ -4,7 +4,6 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
   try {
-    console.log(process.env.SENDGRID_API_KEY)
     await sendgrid.send({
       to: "contact@be-spics.com",
       from: "contact@be-spics.com",
