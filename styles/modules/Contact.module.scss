@@ -4,6 +4,16 @@
     color: $color-txt-error;
     font-size: 11px;
     margin-top: 5px;
+    line-height: 1.5em;
+
+    a {
+        color: $color-txt-error;
+        font-style: italic;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .errorForm {
