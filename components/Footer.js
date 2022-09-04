@@ -17,7 +17,7 @@ export default function Footer() {
                     <ul>
                         <li>Loïc Lécolier</li>
                         <li><a href="tel:+32478651887">+32 478 65 18 87</a></li>
-                        <li><a href="mailto:contact@spics.pro">contact@spics.pro</a></li>
+                        <li><a href="mailto:contact@spics.pro">contact@be-spics.com</a></li>
                         <li>7730 Néchin <br/>59B Rue des Saules</li>
                     </ul>
                 </address>

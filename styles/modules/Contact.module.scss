@@ -1,5 +1,81 @@
 @import 'libs/variables';
 
+.error {
+    color: $color-txt-error;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.errorForm {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.errorInput {
+    border-color: $color-txt-error !important;
+}
+
+.overlaySuccessMessage {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.4);
+    z-index: 998;
+}
+
+.successMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 90%;
+    max-width: 400px;
+    background-color: $color-bg-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(34, 34, 34, 0.2);
+    padding: 20px;
+    text-align: center;
+    z-index: 999;
+
+    &__icon {
+        position: absolute;
+        top: -35px;
+        left: calc(50% - 35px);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #82CE34;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        color: #FFF;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 55px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: -30px;
+        line-height: 1.3em;
+    }
+}
+
 .contact {
     
     &__form {
@@ -10,6 +86,7 @@
 
         textarea {
             resize: none;
+            height: 200px;
         }
 
         input, textarea {
@@ -37,6 +114,11 @@
 
         button {
             width: 100%;
+
+            &:disabled {
+                cursor: default !important;
+                opacity: .7;
+            }
         }
 
         &__line {
@@ -66,17 +148,6 @@
     }
 }
 
-.error {
-    color: $color-txt-error;
-    font-size: 11px;
-    margin-top: 5px;
-    visibility: hidden;
-}
-
-.errorInput {
-    border-color: $color-txt-error !important;
-}
-
 @media screen and (min-width: 375px) {
     .contact {
     
@@ -95,6 +166,7 @@
     
             button {
                 font-size: 15px;
+                cursor: pointer;
             }
     
             &__line {
@@ -116,6 +188,41 @@
                     font-size: 12px;
                 }
             }
+        }
+    }
+
+    .error {
+        color: $color-txt-error;
+        font-size: 13px;
+        margin-top: 8px;
+    }
+    
+    .errorForm {
+        margin-top: 12px;
+        font-size: 15px;
+    }
+
+    .successMessage {
+    
+        &__icon {
+            top: -40px;
+            left: calc(50% - 40px);
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            color: #FFF;
+        }
+    
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+    
+        p {
+            font-size: 18px;
+            margin-top: -20px;
+            line-height: 1.3em;
         }
     }
 }
