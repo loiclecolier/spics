@@ -1,10 +1,10 @@
 @import 'libs/variables';
 
+/* SMALL MOBILE */
 .rocket {
     display: block;
     margin: 35px 25px -35px;
 }
-
 .CTAContact {
     background: $color-bg-secondary;
     padding: 60px 25px 30px;
@@ -25,6 +25,7 @@
     }
 }
 
+/* LARGE MOBILE */
 @media screen and (min-width: 375px) {
     .rocket {
         margin: 40px 25px -40px;
@@ -75,6 +76,44 @@
 
         &__button {
             margin: 25px auto 0;
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .CTAContact {
+        padding: 40px 25px 40px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .rocket {
+        margin: 55px 10vw -55px;
+
+        img {
+            width: 100px !important;
+            height: 100px !important;
+        }
+    }
+    
+    .CTAContact {
+    
+        &__title {
+            font-size: 27px;
+        }
+    
+        &__description {
+            margin-top: 20px;
+            font-size: 17px;
+        }
+    
+        &__button {
+            font-size: 20px;
+            width: 330px;
+            padding: 15px;
+            margin-top: 40px;
         }
     }
 }

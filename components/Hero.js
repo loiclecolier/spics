@@ -34,8 +34,9 @@ export default function Hero() {
         </nav>
         <main className={style.hero__main}>
             <div className={style.hero__main__titles}> 
-                <h1>SPICS <span>Création de site web</span></h1>
-                <div>Tournai et Mouscron</div>
+                <h1>SPICS <span className={style.hero__main__titles__mobile}>Création de site web</span></h1>
+                <div className={style.hero__main__titles__mobile}>Tournai et Mouscron</div>
+                <h2 className={style.hero__main__titles__desktop}>Création de site web à Tournai et Mouscron</h2>
                 <h2>Au service des indépendants et des <br/>petites entreprises</h2>
             </div>
             <div className={style.hero__main__cta}>
@@ -43,7 +44,7 @@ export default function Hero() {
               <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} className="btnSecondary">Voir nos réalisations<div></div></Scroll.Link>
             </div>
         </main>
-        <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} className={style.hero__discover}>
+        <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={1000} className={style.hero__discover}>
           <Image src={ScrollDownIcon} alt="" aria-hidden="true" focusable="false" width={20} height={20}/>
           <span>DÉCOUVRIR SPICS</span>
         </Scroll.Link>

@@ -1,3 +1,4 @@
+/* SMALL MOBILE */
 .sloganService {
     font-size: 15px;
     text-align: center;
@@ -5,9 +6,39 @@
     line-height: 1.3em;
 }
 
+/* LARGE MOBILE */
 @media screen and (min-width: 375px) {
-
     .sloganService {
         font-size: 18px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .services {
+        background-image: url(../../public/assets/background/spics-to-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 60px;
+    }
+    .listCards {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1070px;
+        margin: auto;
+        padding: 0 25px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .sloganService {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .listCards {
+        margin-top: 40px;
+        padding: 0;
     }
 }

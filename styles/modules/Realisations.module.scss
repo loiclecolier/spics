@@ -1,9 +1,9 @@
 @import 'libs/variables';
 
+/* SMALL MOBILE */
 .realisations {
     background: $color-bg-secondary;
     padding: 50px 25px 15px;
-    margin-top: 50px;
 
     &__title {
         padding: 0;
@@ -15,12 +15,35 @@
     }
 }
 
+/* LARGE MOBILE */
 @media screen and (min-width: 375px) {
 
     .realisations {
 
         &__carousel {
             margin-top: 30px;
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .realisations {
+        &__carousel {
+            margin-top: 40px;
+        }
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .realisations {
+        &__title {
+            padding-top: 15px;
+        }
+
+        &__carousel {
+            padding-bottom: 15px;
         }
     }
 }

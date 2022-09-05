@@ -84,7 +84,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className={style.contact}>
-        <h2 className="titleSection">Contact</h2>
+        <h2 className={`${style.contact__title} titleSection`}>Contact</h2>
         <CTAContact hasButton={false} />
         <form onSubmit={handleSubmit} className={style.contact__form}>
             <div className={style.contact__form__line}>

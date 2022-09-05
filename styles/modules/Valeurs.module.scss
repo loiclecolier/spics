@@ -1,14 +1,16 @@
+/* SMALL MOBILE */
 .valeurs {
-    padding: 0 25px;
+    padding: 0 25px 50px;
 
     &__list {
         margin-top: 35px;
         list-style-type: none;
+        max-width: 1070px;
 
         &__element {
             display: flex;
             justify-content: center;
-            max-width: 485px;
+            max-width: 400px;
             margin: 0 auto 45px;
 
             &:last-child {
@@ -37,6 +39,7 @@
     }
 }
 
+/* LARGE MOBILE */
 @media screen and (min-width: 375px) {
     .valeurs {
     
@@ -56,6 +59,52 @@
                     p {
                         font-size: 16px;
                         padding-left: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .valeurs {
+        background-image: url(../../public/assets/background/spics-to-left-valeurs.svg);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: 120% 10%;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .valeurs {
+    
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin: 50px auto 30px;
+    
+            &__element {
+                width: 50%;
+
+                &__number img {
+                    height: 150px !important;
+                }
+    
+                &__valeur {
+                    padding-top: 10px;
+    
+                    h3 {
+                        font-size: 30px;
+                        transform: translateX(-15px);
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        margin-top: 15px;
+                        padding-left: 18px;
                     }
                 }
             }

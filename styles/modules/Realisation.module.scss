@@ -1,5 +1,6 @@
 @import 'libs/variables';
 
+/* SMALL MOBILE */
 .realisation {
     width: 100%;
     max-width: 700px;
@@ -26,6 +27,11 @@
             align-self: flex-end;
             margin-left: 5px;
         }
+    }
+
+    &__image {
+        max-width: 500px;
+        margin: auto;
     }
 
     &__technologies {
@@ -85,6 +91,7 @@
     }
 }
 
+/* LARGE MOBILE */
 @media screen and (min-width: 375px) {
 
     .realisation {
@@ -142,19 +149,95 @@
         }
     
         &__information {
-            padding: 10px 12px;
+            padding: 15px 10px !important;
             margin-top: 30px;
             border-radius: 5px;
             font-size: 13px;
     
             p {
-                margin-left: 12px;
+                margin-left: 15px;
             }
             
             img {
-                width: 20px !important;
-                height: 20px !important;
+                width: 25px !important;
+                height: 25px !important;
             }
+        }
+    }
+
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .realisation {
+        padding-bottom: 60px;
+
+        &__title {
+            font-size: 25px;
+            margin-bottom: 35px;
+    
+            p {
+                font-size: 15px;
+                margin-left: 8px;
+            }
+        }
+
+        &__container {
+            flex-wrap: nowrap;
+        }
+    
+        &__technologies {
+            margin-top: 40px;
+    
+            &__title {
+                font-size: 19px;
+                margin: auto;
+            }
+    
+            &__list {
+                margin-top: 20px;
+    
+                &__element {
+                    margin-right: 25px;
+    
+                    span {
+                        font-size: 14px;
+                    }
+
+                    img {
+                        width: 60px !important;
+                        height: 60px !important;
+                    }
+                }
+            }
+        }
+    
+        &__information {
+            padding: 15px 15px !important;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.3em;
+            width: 250px;
+
+            p {
+                margin-left: 15px;
+            }
+            
+            img {
+                width: 35px !important;
+                height: 35px !important;
+            }
+        }
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .realisation {
+        padding-bottom: 70px;
+        &__image {
+            max-width: 650px;
         }
     }
 

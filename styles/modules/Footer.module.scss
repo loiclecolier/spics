@@ -1,12 +1,12 @@
 @import 'libs/variables';
 
+/* SMALL MOBILE */
 .title {
     font-weight: bold;
     font-size: 17px;
     letter-spacing: -0.02em;
     width: fit-content;
 }
-
 .footer {
     background-color: $color-bg-secondary;
     padding: 25px 25px 15px 25px;
@@ -148,6 +148,88 @@
                     }
                 }
             }
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    
+        &__block {
+            order: 2;
+            margin: 30px auto 30px;
+            transform: translateX(0);
+    
+            &__contact {
+                margin-bottom: 35px;
+    
+                address {
+                    margin-top: 5px;
+    
+                    ul {
+                        height: 115px;
+                        font-size: 16px;
+    
+                        li {
+                            margin-top: 12px;
+                            margin-right: 25px;
+                            max-width: 180px;
+                        }
+                    }
+                }
+    
+                &__menuSocialNetworks {
+                    ul {
+                        li {
+                            margin-right: 15px;
+
+                            img {
+                                width: 25px !important;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &__menu {
+    
+                nav {
+                    margin-top: 5px;
+    
+                    ul {
+                        height: 115px;
+                        font-size: 16px;
+    
+                        li {
+                            margin-top: 12px;
+                            margin-right: 25px;
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &__logo {
+            display: flex;
+            order: 1;
+            transform: translateX(25vw);
+
+            img {
+                width: 150px !important;
+            }
+        }
+    
+        &__copyright {
+            width: 100%;
+            order: 3;
+            font-size: 13px;
         }
     }
 }

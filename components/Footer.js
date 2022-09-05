@@ -12,7 +12,7 @@ import { useRouter } from 'next/router'
 export default function Footer() {
     
   return (
-    <footer className={style.footer}>
+    <footer className={style.footer} id="footer">
         <div className={style.footer__block}>
             <div className={style.footer__block__contact}>
                 <h3 className={style.title}>CONTACT</h3>

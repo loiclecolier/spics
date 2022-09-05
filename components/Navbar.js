@@ -1,21 +1,28 @@
 import style from '../styles/modules/Navbar.module.scss'
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import LogoBlanc from '../public/assets/icons/logo-spics-blanc.svg';
+import LogoSpics from '../public/assets/icons/logo-spics.svg';
 import BurgerMenuIcon from '../public/assets/icons/burger-menu.svg';
 import FacebookIcon from '../public/assets/icons/facebook-blanc.svg';
 import InstagramIcon from '../public/assets/icons/instagram-blanc.svg';
 import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
+import DropMenuIcon from '../public/assets/icons/scroll-down.svg';
 import Link from 'next/link';
 import * as Scroll from 'react-scroll';
 import { useRouter } from 'next/router'
 
 export default function Navbar() {
 
-  // close menu
+  // open/close nav mobile
   const [toggle, setToggle] = useState(false);
   const handleNav = () => {
     setToggle(!toggle);
+  };
+
+  // open/close nav desktop/tablet
+  const [toggleDesk, setToggleDesk] = useState(false);
+  const handleNavDesk = () => {
+    setToggleDesk(!toggleDesk);
   };
 
   // get screen size
@@ -46,7 +53,9 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={`${style.navContent} ${toggle && style.active}`} style={{height: `${size.height}px`}}>
+
+      {/* Menu for mobile */}
+      <div className={`${style.navContent} ${toggle && style.active}`} style={{height: `${size.height}px`}} id="navContent">
 
         <nav className={style.navContent__menu}>
           <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
@@ -80,7 +89,7 @@ export default function Navbar() {
               <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>VALEURS</Scroll.Link>
             </li>
             <li>
-              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>REALISATIONS</Scroll.Link>
+              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>RÉALISATIONS</Scroll.Link>
             </li>
             <li>
               <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>CONTACT</Scroll.Link>
@@ -124,32 +133,98 @@ export default function Navbar() {
         </nav>
       </div>
 
-      <header className={scroll ? `${style.navbar} ${style.navbarScroll}` : `${style.navbar}`}>
+      <header id="navbar" className={scroll ? `${style.navbar} ${style.navbarScroll}` : `${style.navbar}`}>
 
         {page !== '/' ? // Si pas la page principale -> pas de smooth scroll
           <Link href="/">
             <a className={style.navbar__image}>
               <Image
-                src={LogoBlanc}
-                alt="Logo Spics Blanc"
-                width={35}
+                src={LogoSpics}
+                alt="Logo Spics"
+                width={100}
                 height={35}
               />
             </a>
           </Link>
           : // Si page principale -> smooth scroll
-          <Scroll.Link to="topPage" spy={true} smooth={true} duration={500} className={style.navbar__image}>
+          <Scroll.Link to="topPage" spy={true} smooth={true} duration={500} className={`${style.navbar__image} ${"logoSpics"}`}>
             <Image
-              src={LogoBlanc}
-              alt="Logo Spics Blanc"
-              width={35}
+              src={LogoSpics}
+              alt="Logo Spics"
+              width={100}
               height={35}
             />
           </Scroll.Link>
         }
+
+        {/* For mobile */}
         <div onClick={handleNav} className={style.navbar__burger}>
           <Image src={BurgerMenuIcon} alt="Ouvrir le menu mobile" width={30} height={30} />
         </div>
+
+        {/* For tablet and desktop */}
+        <nav className={style.navbar__menu}>
+          <ul>
+            <li>
+              <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>SERVICES</Scroll.Link>
+              <Image src={DropMenuIcon} alt="Dérouler le menu des services" width={25} height={25} onClick={handleNavDesk} className={style.navbar__menu__link__drop} />
+              {toggleDesk &&
+                <ul className={style.navbar__menu__submenu}>
+                  <li>
+                    <Link href="/ux-ui-design">
+                      <a className={style.navbar__menu__submenu__link} onClick={handleNav}>UX / UI Design</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/creation-site-web">
+                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Création de site web</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/referencement-seo">
+                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Référencement (SEO)</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/hebergement-maintenance">
+                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Hébergement &amp; Maintenance</a>
+                    </Link>
+                  </li>
+                </ul>
+              }
+            </li>
+            <li>
+              <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>VALEURS</Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>RÉALISATIONS</Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>CONTACT</Scroll.Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* For tablet and desktop */}
+        <nav className={style.navbar__socialNetworks}>
+          <ul>
+            <li>
+              <a target="_blank" href="#">
+                <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </>
   );

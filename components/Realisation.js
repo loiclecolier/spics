@@ -15,16 +15,16 @@ export default function Realisation(props) {
             <Image src={ExternalLink} alt="" width={15} height={15} />
             <p>Visiter le site web</p>
         </a>
-
-        <Image
-            layout="responsive"
-            placeholder="blur"
-            src={props.srcImage}
-            alt={props.altImage}
-            width={1000}
-            height={650}
-            className={style.realisation__image}
-        />
+        <div className={style.realisation__image}>
+            <Image
+                layout="responsive"
+                placeholder="blur"
+                src={props.srcImage}
+                alt={props.altImage}
+                width={1000}
+                height={650}
+            />
+        </div>
 
         <div className={style.realisation__container}>
             <div className={style.realisation__technologies}>

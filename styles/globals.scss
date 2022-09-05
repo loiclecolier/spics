@@ -2,29 +2,51 @@
 @import 'libs/typography';
 @import 'libs/variables';
 
+/* Default values */
 * {
   font-family: $font-default;
 }
-
 html, body {
   font-size: 13px;
   color: $color-txt-primary;
   width: 100%;
 }
 
+/* Links */
 a {
   text-decoration: none;
 }
-
 a, a:focus, a:visited, a:hover, a:active {
   cursor: pointer;
   color: $color-txt-link;
 }
-
 a:hover {
   color: $color-txt-link-hover;
 }
+a.active::after {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 1px;
+  background-color: $color-txt-contrast;
+  transform: translateY(3px);
+  visibility: visible !important;
+}
+.logoSpics.active::after {
+  display: none;
+}
+#navbar a.active {
+  color: #FFF;
+}
+#navContent a.active::after {
+  display: none !important;
+}
+#footer a.active::after {
+  display: none !important;
+}
 
+/* Buttons */
 .btnPrimary {
   position: relative;
   display: block;
@@ -59,7 +81,6 @@ a:hover {
     opacity: 1;
   }
 }
-
 .btnSecondary {
   display: block;
   color: $color-txt-link;
@@ -74,13 +95,13 @@ a:hover {
   text-align: center;
 }
 
+/* Title section */
 .titleSection {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   padding-top: 40px;
 }
-
 .titleSection::after {
   content: '';
   display: block;
@@ -88,18 +109,6 @@ a:hover {
   height: 1px;
   background: $color-txt-primary;
   margin: 5px auto 0;
-}
-
-@media screen and (min-width: 375px) {
-  .titleSection {
-    font-size: 30px;
-    padding-top: 50px;
-  }
-  
-  .titleSection::after {
-    width: 80px;
-    margin: 7.5px auto 0;
-  }
 }
 
 /* Carousel "Nos réalisations" */
@@ -172,5 +181,74 @@ a:hover {
         background: linear-gradient(180deg, rgba(38, 71, 197, 0.4) 0%, rgba(52, 159, 221, 0.4) 100%);
       }
     }
+  }
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+  .titleSection {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  
+  .titleSection::after {
+    width: 80px;
+    margin: 7.5px auto 0;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  #realisations {
+
+    .control-next.control-arrow {
+      height: 50px;
+      width: 50px;
+  
+      &:before {
+        border-left: 16px solid #FFF;
+        border-bottom: 11px solid transparent;
+        border-top: 11px solid transparent;
+        transform: translateX(2px);
+      }
+    }
+  
+    .control-prev.control-arrow {
+      height: 50px;
+      width: 50px;
+  
+      &:before {
+        background-color: transparent;
+        border-right: 15px solid #FFF;
+        border-bottom: 11px solid transparent;
+        border-top: 11px solid transparent;
+        transform: translateX(-2px);
+      }
+    }
+  
+    .control-dots {
+  
+      .dot {
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .titleSection {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .titleSection {
+    padding-top: 60px;
   }
 }
