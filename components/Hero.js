@@ -6,12 +6,13 @@ import ScrollDownIcon from '../public/assets/icons/scroll-down.svg';
 
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
+import * as Scroll from 'react-scroll';
 
 export default function Hero() {
   const size = useWindowSize();
 
   return (
-    <div className={style.hero} style={{height: `${size.height}px`}}>
+    <div className={style.hero} id="topPage" style={{height: `${size.height}px`}}>
         <nav className={style.hero__menuSocialNetworks}>
           <ul>
             <li>
@@ -38,14 +39,14 @@ export default function Hero() {
                 <h2>Au service des indépendants et des <br/>petites entreprises</h2>
             </div>
             <div className={style.hero__main__cta}>
-              <a href="#contact" className="btnPrimary">Parler de votre projet</a>
-              <a href="#realisations" className="btnSecondary">Voir nos réalisations<div></div></a>
+              <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="btnPrimary">Parler de votre projet</Scroll.Link>
+              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} className="btnSecondary">Voir nos réalisations<div></div></Scroll.Link>
             </div>
         </main>
-        <a href="#services" className={style.hero__discover}>
-            <Image src={ScrollDownIcon} alt="" aria-hidden="true" focusable="false" width={20} height={20}/>
-            <span>DÉCOUVRIR SPICS</span>
-        </a>
+        <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} className={style.hero__discover}>
+          <Image src={ScrollDownIcon} alt="" aria-hidden="true" focusable="false" width={20} height={20}/>
+          <span>DÉCOUVRIR SPICS</span>
+        </Scroll.Link>
     </div>
   )
 }

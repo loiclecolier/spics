@@ -6,8 +6,11 @@ import FacebookIcon from '../public/assets/icons/facebook-colore.svg';
 import InstagramIcon from '../public/assets/icons/instagram-colore.svg';
 import LinkedinIcon from '../public/assets/icons/linkedin-colore.svg';
 import Link from 'next/link';
+import * as Scroll from 'react-scroll';
+import { useRouter } from 'next/router'
 
 export default function Footer() {
+    
   return (
     <footer className={style.footer}>
         <div className={style.footer__block}>
@@ -46,16 +49,16 @@ export default function Footer() {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#services">Services</a>
+                            <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500}>Services</Scroll.Link>
                         </li>
                         <li>
-                            <a href="#valeurs">Valeurs</a>
+                            <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500}>Valeurs</Scroll.Link>
                         </li>
                         <li>
-                            <a href="#realisations">Réalisations</a>
+                            <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500}>Réalisations</Scroll.Link>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>Contact</Scroll.Link>
                         </li>
                         <li>
                             <Link href="/mentions-legales">

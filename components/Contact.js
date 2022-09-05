@@ -63,13 +63,13 @@ export default function Contact() {
           tempErrors["firstname"] = "Ce champ est obligatoire";
           isValid = false;
         }
-        if (email.length <= 0) {
-          tempErrors["email"] = "Ce champ est obligatoire";
-          isValid = false;
-        }
         if (!isEmail(email)) {
             tempErrors["email"] = "Entrez une adresse e-mail valide";
             isValid = false;
+        }
+        if (email.length <= 0) {
+          tempErrors["email"] = "Ce champ est obligatoire";
+          isValid = false;
         }
         if (message.length <= 0) {
           tempErrors["message"] = "Ce champ est obligatoire";

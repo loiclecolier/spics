@@ -7,6 +7,8 @@ import FacebookIcon from '../public/assets/icons/facebook-blanc.svg';
 import InstagramIcon from '../public/assets/icons/instagram-blanc.svg';
 import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
 import Link from 'next/link';
+import * as Scroll from 'react-scroll';
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
 
@@ -22,11 +24,15 @@ export default function Navbar() {
   // change nav when scrolling
   const [scroll, setScroll] = useState(false);
 
+  // get URL
+  const router = useRouter();
+  const page = router.pathname;
+
   useEffect(() => {
     window.addEventListener('scroll', changeNavbar);
 
     function changeNavbar () {
-      if (window.scrollY >= 70) {
+      if (window.scrollY >= 50) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -46,7 +52,7 @@ export default function Navbar() {
           <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
           <ul>
             <li>
-              <a href="#services" onClick={handleNav}>SERVICES</a>
+              <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>SERVICES</Scroll.Link>
               <ul className={style.navContent__menu__submenu}>
                 <li>
                   <Link href="/ux-ui-design">
@@ -65,19 +71,19 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href="/hebergement-maintenance">
-                    <a onClick={handleNav}>Hébergement & Maintenance</a>
+                    <a onClick={handleNav}>Hébergement &amp; Maintenance</a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#valeurs" onClick={handleNav}>VALEURS</a>
+              <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>VALEURS</Scroll.Link>
             </li>
             <li>
-              <a href="#realisations" onClick={handleNav}>RÉALISATIONS</a>
+              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>REALISATIONS</Scroll.Link>
             </li>
             <li>
-              <a href="#contact" onClick={handleNav}>CONTACT</a>
+              <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>CONTACT</Scroll.Link>
             </li>
           </ul>
         </nav>
@@ -119,16 +125,28 @@ export default function Navbar() {
       </div>
 
       <header className={scroll ? `${style.navbar} ${style.navbarScroll}` : `${style.navbar}`}>
-        <Link href="/">
-          <a className={style.navbar__image}>
+
+        {page !== '/' ? // Si pas la page principale -> pas de smooth scroll
+          <Link href="/">
+            <a className={style.navbar__image}>
+              <Image
+                src={LogoBlanc}
+                alt="Logo Spics Blanc"
+                width={35}
+                height={35}
+              />
+            </a>
+          </Link>
+          : // Si page principale -> smooth scroll
+          <Scroll.Link to="topPage" spy={true} smooth={true} duration={500} className={style.navbar__image}>
             <Image
               src={LogoBlanc}
               alt="Logo Spics Blanc"
               width={35}
               height={35}
             />
-          </a>
-        </Link>
+          </Scroll.Link>
+        }
         <div onClick={handleNav} className={style.navbar__burger}>
           <Image src={BurgerMenuIcon} alt="Ouvrir le menu mobile" width={30} height={30} />
         </div>
