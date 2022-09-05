@@ -6,14 +6,14 @@ import Jinkgo from '../public/assets/img/realisations/jinkgo.png';
 import TiramisuBlog from '../public/assets/img/realisations/tiramisu-blog.png';
 import ShuttleShop from '../public/assets/img/realisations/shuttle-shop.png';
 import SportsRiveDroite from '../public/assets/img/realisations/sports-rive-droite.png';
-import FigmaLogo from '../public/assets/icons/technologies/figma.png';
-import ReactLogo from '../public/assets/icons/technologies/react.png';
-import FirebaseLogo from '../public/assets/icons/technologies/firebase.png';
-import NodeLogo from '../public/assets/icons/technologies/nodejs.png';
-import ExpressLogo from '../public/assets/icons/technologies/expressjs.png';
-import MongoDBLogo from '../public/assets/icons/technologies/mongodb.png';
-import WordPressLogo from '../public/assets/icons/technologies/wordpress.png';
-import BookedLogo from '../public/assets/icons/technologies/booked.png';
+import FigmaLogo from '../public/assets/icons/technologies/figma.svg';
+import ReactLogo from '../public/assets/icons/technologies/react.svg';
+import FirebaseLogo from '../public/assets/icons/technologies/firebase.svg';
+import NodeLogo from '../public/assets/icons/technologies/nodejs.svg';
+import ExpressLogo from '../public/assets/icons/technologies/expressjs.svg';
+import MongoDBLogo from '../public/assets/icons/technologies/mongodb.svg';
+import WordPressLogo from '../public/assets/icons/technologies/wordpress.svg';
+import BookedLogo from '../public/assets/icons/technologies/booked.svg';
 import Realisation from './Realisation';
 
 export default function Realisations() {
