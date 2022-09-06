@@ -49,7 +49,7 @@ export default function HebergementMaintenance() {
               img={DesktopMobileIcon}
               widthImg="45"
               heightImg="45"
-              text="Nous <strong>développons des sites web performants</strong>, <strong>sécurisés</strong> et <strong>accessibles</strong>. Ces 3 conditions techniques améliorent le référencement de votre site" />
+              text="Nous <a href='/services/creation-site-web'><strong>développons des sites web</a> performants</strong>, <strong>sécurisés</strong> et <strong>accessibles</strong>. Ces 3 conditions techniques améliorent le référencement de votre site" />
             <Competence
               img={LettersIcon}
               widthImg="48"
