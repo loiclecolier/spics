@@ -152,12 +152,12 @@
                 }
 
                 &__link {
-                    color: $color-txt-primary;
+                    color: $color-txt-primary !important;
                     font-weight: normal;
                     transition: .3s;
 
                     &:hover {
-                        color: $color-txt-link-hover;
+                        color: $color-txt-link-hover !important;
                     }
                 }
             }
