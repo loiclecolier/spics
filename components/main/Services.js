@@ -1,10 +1,10 @@
 import style from '../../styles/modules/main/Services.module.scss';
 import React from 'react'
 import Card from './Card';
-import UXUIDesign from '../../public/assets/img/cards/ux-ui-design.jpg';
-import CreationSiteWeb from '../../public/assets/img/cards/creation-site-web.jpg';
-import ReferencementSEO from '../../public/assets/img/cards/referencement-seo.jpg';
-import HebergementMaintenance from '../../public/assets/img/cards/hebergement-maintenance.jpg';
+import UXUIDesign from '../../public/assets/img/services/ux-ui-design.jpg';
+import CreationSiteWeb from '../../public/assets/img/services/creation-site-web.jpg';
+import ReferencementSEO from '../../public/assets/img/services/referencement-seo.jpg';
+import HebergementMaintenance from '../../public/assets/img/services/hebergement-maintenance.jpg';
 
 export default function Services() {
 

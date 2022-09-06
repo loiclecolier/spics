@@ -64,22 +64,22 @@ export default function Navbar() {
               <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>SERVICES</Scroll.Link>
               <ul className={style.navContent__menu__submenu}>
                 <li>
-                  <Link href="/ux-ui-design">
+                  <Link href="/services/ux-ui-design">
                     <a onClick={handleNav}>UX / UI Design</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/creation-site-web">
+                  <Link href="/services/creation-site-web">
                     <a onClick={handleNav}>Création de site web</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/referencement-seo">
+                  <Link href="/services/referencement-seo">
                     <a onClick={handleNav}>Référencement (SEO)</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/hebergement-maintenance">
+                  <Link href="/services/hebergement-maintenance">
                     <a onClick={handleNav}>Hébergement &amp; Maintenance</a>
                   </Link>
                 </li>
@@ -172,7 +172,7 @@ export default function Navbar() {
                 <ul className={style.navbar__menu__submenu}>
                   <li>
                     <Link href="/services/ux-ui-design">
-                      <a className={style.navbar__menu__submenu__link} onClick={handleNav}>UX / UI Design</a>
+                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>UX / UI Design</a>
                     </Link>
                   </li>
                   <li>

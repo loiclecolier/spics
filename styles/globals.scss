@@ -95,7 +95,7 @@ a.active::after {
   text-align: center;
 }
 
-/* Title section */
+/* Titles */
 .titleSection {
   font-size: 25px;
   font-weight: bold;
@@ -109,6 +109,25 @@ a.active::after {
   height: 1px;
   background: $color-txt-primary;
   margin: 5px auto 0;
+}
+.titleService {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 30px 0;
+}
+.gradientTextBig {
+  background-color: $color-txt-link; /* Fallback : if browser doesn't support */
+  background-image: linear-gradient(180deg, #2647C5 0%, #349FDD 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: bold;
+  padding-right: 3px;
 }
 
 /* Carousel "Nos réalisations" */
@@ -190,10 +209,16 @@ a.active::after {
     font-size: 30px;
     padding-top: 50px;
   }
-  
   .titleSection::after {
     width: 80px;
     margin: 7.5px auto 0;
+  }
+  .titleService {
+    font-size: 23px;
+    padding: 35px 0;
+  }
+  .gradientTextBig {
+    font-size: 55px;
   }
 }
 
@@ -235,6 +260,15 @@ a.active::after {
       }
     }
   }
+
+  .titleService {
+    font-size: 27.5px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .gradientTextBig {
+    font-size: 65px;
+  }
 }
 
 /* DESKTOP */
@@ -245,10 +279,25 @@ a.active::after {
     text-align: center;
     padding-top: 50px;
   }
+  .titleService {
+    font-size: 35px;
+    padding: 50px 0;
+  }
+  .gradientTextBig {
+    font-size: 80px;
+  }
 }
 
+/* LARGE DESKTOP */
 @media screen and (min-width: 1440px) {
   .titleSection {
     padding-top: 60px;
+  }
+  .titleService {
+    font-size: 40px;
+    padding: 60px 0;
+  }
+  .gradientTextBig {
+    font-size: 100px;
   }
 }

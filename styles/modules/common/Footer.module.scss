@@ -219,7 +219,7 @@
         &__logo {
             display: flex;
             order: 1;
-            transform: translateX(25vw);
+            transform: translateX(20vw);
 
             img {
                 width: 150px !important;
@@ -230,6 +230,24 @@
             width: 100%;
             order: 3;
             font-size: 13px;
+        }
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .footer {
+        &__logo {
+            transform: translateX(25vw);
+        }
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .footer {
+        &__logo {
+            transform: translateX(30vw);
         }
     }
 }

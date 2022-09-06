@@ -13,10 +13,10 @@ export default function CTAContact(props) {
 
   return (
     <>
-      <div className={style.rocket}>
+      <div className={props.isService ? `${style.rocket} ${style.rocketService}` : `${style.rocket}`}>
         <Image src={Rocket} alt="" width={60} height={60} />
       </div>
-      <div className={style.CTAContact}>
+      <div className={props.isService ? `${style.CTAContact} ${style.CTAContactService}` : `${style.CTAContact}`}>
           <h2 className={style.CTAContact__title}>Donnez vie à votre projet !</h2>
           <p className={style.CTAContact__description}>
               Un site vitrine ? Un e-commerce ? Un site de réservation en ligne ?

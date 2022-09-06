@@ -82,6 +82,10 @@
             li {
                 margin-bottom: 2vh;
                 margin-left: 20px;
+
+                a {
+                    color: $color-txt-contrast;
+                }
             }
             li:first-child {
                 margin-top: 2vh;
@@ -277,7 +281,7 @@
         &__menu {
 
             &__submenu {
-                width: 235px;
+                width: 255px;
 
                 li {
                     margin-bottom: 13px;
