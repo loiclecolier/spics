@@ -36,8 +36,8 @@ a.active::after {
 .logoSpics.active::after {
   display: none;
 }
-#navbar a.active {
-  color: #FFF;
+#navbar a.active, #navContent a.active, #navContent a, #navContent a:visited, #navContent a:hover, #navContent a:focus  {
+  color: #FFF !important;
 }
 #navContent a.active::after {
   display: none !important;

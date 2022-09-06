@@ -61,7 +61,13 @@ export default function Navbar() {
           <span onClick={handleNav} className={style.navContent__menu__close}>&#10539;</span>
           <ul>
             <li>
-              <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>SERVICES</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>SERVICES</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#services">
+                  <a onClick={handleNav}>SERVICES</a>
+                </Link>
+              }
               <ul className={style.navContent__menu__submenu}>
                 <li>
                   <Link href="/services/ux-ui-design">
@@ -86,13 +92,31 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>VALEURS</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>VALEURS</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#valeurs">
+                  <a onClick={handleNav}>VALEURS</a>
+                </Link>
+              }
             </li>
             <li>
-              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>RÉALISATIONS</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>RÉALISATIONS</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#realisations">
+                  <a onClick={handleNav}>RÉALISATIONS</a>
+                </Link>
+              }
             </li>
             <li>
-              <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>CONTACT</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={handleNav}>CONTACT</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#contact">
+                  <a onClick={handleNav}>CONTACT</a>
+                </Link>
+              }
             </li>
           </ul>
         </nav>
@@ -166,7 +190,13 @@ export default function Navbar() {
         <nav className={style.navbar__menu}>
           <ul>
             <li>
-              <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>SERVICES</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>SERVICES</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#services">
+                  <a className={style.navbar__menu__link}>SERVICES</a>
+                </Link>
+              }
               <Image src={DropMenuIcon} alt="Dérouler le menu des services" width={25} height={25} onClick={handleNavDesk} className={style.navbar__menu__link__drop} />
               {toggleDesk &&
                 <ul className={style.navbar__menu__submenu}>
@@ -194,13 +224,31 @@ export default function Navbar() {
               }
             </li>
             <li>
-              <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>VALEURS</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>VALEURS</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#valeurs">
+                  <a className={style.navbar__menu__link}>VALEURS</a>
+                </Link>
+              }
             </li>
             <li>
-              <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>RÉALISATIONS</Scroll.Link>
+              {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>RÉALISATIONS</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#realisations">
+                  <a className={style.navbar__menu__link}>RÉALISATIONS</a>
+                </Link>
+              }
             </li>
             <li>
-              <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>CONTACT</Scroll.Link>
+            {page === '/' ? // Si page principale -> smooth scroll
+                <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className={style.navbar__menu__link}>CONTACT</Scroll.Link>
+              : // si autre page -> pas de smooth scroll
+                <Link href="/#contact">
+                  <a className={style.navbar__menu__link}>CONTACT</a>
+                </Link>
+              }
             </li>
           </ul>
         </nav>
