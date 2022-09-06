@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import style from '../styles/modules/Footer.module.scss';
-import Logo from '../public/assets/logo-footer.svg';
-import FacebookIcon from '../public/assets/icons/facebook-colore.svg';
-import InstagramIcon from '../public/assets/icons/instagram-colore.svg';
-import LinkedinIcon from '../public/assets/icons/linkedin-colore.svg';
+import style from '../../styles/modules/common/Footer.module.scss';
+import Logo from '../../public/assets/logo-footer.svg';
+import FacebookIcon from '../../public/assets/icons/facebook-colore.svg';
+import InstagramIcon from '../../public/assets/icons/instagram-colore.svg';
+import LinkedinIcon from '../../public/assets/icons/linkedin-colore.svg';
 import Link from 'next/link';
 import * as Scroll from 'react-scroll';
-import { useRouter } from 'next/router'
 
 export default function Footer() {
     

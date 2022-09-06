@@ -1,19 +1,19 @@
 import React from 'react';
-import style from '../styles/modules/Realisations.module.scss';
+import style from '../../styles/modules/main/Realisations.module.scss';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import Jinkgo from '../public/assets/img/realisations/jinkgo.png';
-import TiramisuBlog from '../public/assets/img/realisations/tiramisu-blog.png';
-import ShuttleShop from '../public/assets/img/realisations/shuttle-shop.png';
-import SportsRiveDroite from '../public/assets/img/realisations/sports-rive-droite.png';
-import FigmaLogo from '../public/assets/icons/technologies/figma.svg';
-import ReactLogo from '../public/assets/icons/technologies/react.svg';
-import FirebaseLogo from '../public/assets/icons/technologies/firebase.svg';
-import NodeLogo from '../public/assets/icons/technologies/nodejs.svg';
-import ExpressLogo from '../public/assets/icons/technologies/expressjs.svg';
-import MongoDBLogo from '../public/assets/icons/technologies/mongodb.svg';
-import WordPressLogo from '../public/assets/icons/technologies/wordpress.svg';
-import BookedLogo from '../public/assets/icons/technologies/booked.svg';
+import Jinkgo from '../../public/assets/img/realisations/jinkgo.png';
+import TiramisuBlog from '../../public/assets/img/realisations/tiramisu-blog.png';
+import ShuttleShop from '../../public/assets/img/realisations/shuttle-shop.png';
+import SportsRiveDroite from '../../public/assets/img/realisations/sports-rive-droite.png';
+import FigmaLogo from '../../public/assets/icons/technologies/figma.svg';
+import ReactLogo from '../../public/assets/icons/technologies/react.svg';
+import FirebaseLogo from '../../public/assets/icons/technologies/firebase.svg';
+import NodeLogo from '../../public/assets/icons/technologies/nodejs.svg';
+import ExpressLogo from '../../public/assets/icons/technologies/expressjs.svg';
+import MongoDBLogo from '../../public/assets/icons/technologies/mongodb.svg';
+import WordPressLogo from '../../public/assets/icons/technologies/wordpress.svg';
+import BookedLogo from '../../public/assets/icons/technologies/booked.svg';
 import Realisation from './Realisation';
 
 export default function Realisations() {

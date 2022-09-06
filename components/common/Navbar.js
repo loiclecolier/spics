@@ -1,12 +1,12 @@
-import style from '../styles/modules/Navbar.module.scss'
+import style from '../../styles/modules/common/Navbar.module.scss'
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import LogoSpics from '../public/assets/icons/logo-spics.svg';
-import BurgerMenuIcon from '../public/assets/icons/burger-menu.svg';
-import FacebookIcon from '../public/assets/icons/facebook-blanc.svg';
-import InstagramIcon from '../public/assets/icons/instagram-blanc.svg';
-import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
-import DropMenuIcon from '../public/assets/icons/scroll-down.svg';
+import LogoSpics from '../../public/assets/icons/logo-spics.svg';
+import BurgerMenuIcon from '../../public/assets/icons/burger-menu.svg';
+import FacebookIcon from '../../public/assets/icons/facebook-blanc.svg';
+import InstagramIcon from '../../public/assets/icons/instagram-blanc.svg';
+import LinkedinIcon from '../../public/assets/icons/linkedin-blanc.svg';
+import DropMenuIcon from '../../public/assets/icons/scroll-down.svg';
 import Link from 'next/link';
 import * as Scroll from 'react-scroll';
 import { useRouter } from 'next/router'
@@ -171,22 +171,22 @@ export default function Navbar() {
               {toggleDesk &&
                 <ul className={style.navbar__menu__submenu}>
                   <li>
-                    <Link href="/ux-ui-design">
+                    <Link href="/services/ux-ui-design">
                       <a className={style.navbar__menu__submenu__link} onClick={handleNav}>UX / UI Design</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/creation-site-web">
+                    <Link href="/services/creation-site-web">
                       <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Création de site web</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/referencement-seo">
+                    <Link href="/services/referencement-seo">
                       <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Référencement (SEO)</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/hebergement-maintenance">
+                    <Link href="/services/hebergement-maintenance">
                       <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Hébergement &amp; Maintenance</a>
                     </Link>
                   </li>

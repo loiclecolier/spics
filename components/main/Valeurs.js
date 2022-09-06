@@ -1,9 +1,9 @@
-import style from '../styles/modules/Valeurs.module.scss';
+import style from '../../styles/modules/main/Valeurs.module.scss';
 import React from 'react';
 import Image from 'next/image';
-import Valeur1 from '../public/assets/icons/valeur-1.svg';
-import Valeur2 from '../public/assets/icons/valeur-2.svg';
-import Valeur3 from '../public/assets/icons/valeur-3.svg';
+import Valeur1 from '../../public/assets/icons/valeur-1.svg';
+import Valeur2 from '../../public/assets/icons/valeur-2.svg';
+import Valeur3 from '../../public/assets/icons/valeur-3.svg';
 
 export default function Valeurs() {
   return (

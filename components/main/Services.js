@@ -1,10 +1,10 @@
-import style from '../styles/modules/Services.module.scss';
+import style from '../../styles/modules/main/Services.module.scss';
 import React from 'react'
 import Card from './Card';
-import UXUIDesign from '../public/assets/img/cards/ux-ui-design.jpg';
-import CreationSiteWeb from '../public/assets/img/cards/creation-site-web.jpg';
-import ReferencementSEO from '../public/assets/img/cards/referencement-seo.jpg';
-import HebergementMaintenance from '../public/assets/img/cards/hebergement-maintenance.jpg';
+import UXUIDesign from '../../public/assets/img/cards/ux-ui-design.jpg';
+import CreationSiteWeb from '../../public/assets/img/cards/creation-site-web.jpg';
+import ReferencementSEO from '../../public/assets/img/cards/referencement-seo.jpg';
+import HebergementMaintenance from '../../public/assets/img/cards/hebergement-maintenance.jpg';
 
 export default function Services() {
 
@@ -16,7 +16,7 @@ export default function Services() {
 
         {/* UX / UI DESIGN */}
         <Card
-          link="/ux-ui-design"
+          link="/services/ux-ui-design"
           title="UX / UI DESIGN"
           description="Faites-nous confiance pour offrir à vos utilisateurs une expérience intuitive et agréable avec un design à l’image de votre activité."
           srcImage={UXUIDesign}
@@ -25,7 +25,7 @@ export default function Services() {
 
         {/* CREATION DE SITE WEB */}
         <Card
-          link="/creation-site-web"
+          link="/services/creation-site-web"
           title="CRÉATION DE SITE WEB"
           description="Faites-nous confiance pour développer votre site. Notre flexibilité nous permet d’utiliser les bons outils en fonction de vos besoins et votre budget."
           srcImage={CreationSiteWeb}
@@ -34,7 +34,7 @@ export default function Services() {
 
         {/* REFERENCEMENT (SEO) */}
         <Card
-          link="/referencement-seo"
+          link="/services/referencement-seo"
           title="RÉFÉRENCEMENT (SEO)"
           description="Faites-nous confiance pour optimiser le référencement naturel de votre site et augmenter la visibilité de votre activité."
           srcImage={ReferencementSEO}
@@ -43,7 +43,7 @@ export default function Services() {
 
         {/* HEBERGEMENT & MAINTENANCE */}
         <Card
-          link="/hebergement-maintenance"
+          link="/services/hebergement-maintenance"
           title="HÉBERGEMENT &amp; MAINTENANCE"
           description="Faites-nous confiance pour l’hébergement et la maintenance de votre site pour que vous puissiez vous consacrer à 100% à votre activité."
           srcImage={HebergementMaintenance}

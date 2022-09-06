@@ -1,4 +1,4 @@
-import style from '../styles/modules/Card.module.scss';
+import style from '../../styles/modules/main/Card.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';

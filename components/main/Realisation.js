@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import style from '../styles/modules/Realisation.module.scss';
-import InformationIcon from '../public/assets/icons/information.svg';
-import ExternalLink from '../public/assets/icons/external-link.svg';
+import style from '../../styles/modules/main/Realisation.module.scss';
+import InformationIcon from '../../public/assets/icons/information.svg';
+import ExternalLink from '../../public/assets/icons/external-link.svg';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function Realisation(props) {

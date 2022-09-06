@@ -29,6 +29,10 @@
 /* TABLET */
 @media screen and (min-width: 768px) {
     .realisations {
+        background-image: url(../../../public/assets/background/spics-to-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
         &__carousel {
             margin-top: 40px;
         }

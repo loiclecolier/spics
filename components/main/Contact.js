@@ -1,6 +1,6 @@
-import style from '../styles/modules/Contact.module.scss';
+import style from '../../styles/modules/main/Contact.module.scss';
 import React, {useState} from 'react'
-import CTAContact from './CTAContact';
+import CTAContact from '../common/CTAContact';
 import isEmail from 'validator/lib/isEmail';
 
 export default function Contact() {

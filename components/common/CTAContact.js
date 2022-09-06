@@ -1,7 +1,7 @@
-import style from '../styles/modules/CTAContact.module.scss';
+import style from '../../styles/modules/common/CTAContact.module.scss';
 import React from 'react';
 import Image from 'next/image';
-import Rocket from '../public/assets/icons/rocket.svg';
+import Rocket from '../../public/assets/icons/rocket.svg';
 import * as Scroll from 'react-scroll';
 import { useRouter } from 'next/router'
 import Link from 'next/link';

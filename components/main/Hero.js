@@ -1,8 +1,8 @@
-import style from '../styles/modules/Hero.module.scss';
-import FacebookIcon from '../public/assets/icons/facebook-blanc.svg';
-import InstagramIcon from '../public/assets/icons/instagram-blanc.svg';
-import LinkedinIcon from '../public/assets/icons/linkedin-blanc.svg';
-import ScrollDownIcon from '../public/assets/icons/scroll-down.svg';
+import style from '../../styles/modules/main/Hero.module.scss';
+import FacebookIcon from '../../public/assets/icons/facebook-blanc.svg';
+import InstagramIcon from '../../public/assets/icons/instagram-blanc.svg';
+import LinkedinIcon from '../../public/assets/icons/linkedin-blanc.svg';
+import ScrollDownIcon from '../../public/assets/icons/scroll-down.svg';
 
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
