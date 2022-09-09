@@ -8,10 +8,10 @@ import Valeur3 from '../../public/assets/icons/valeur-3.svg';
 export default function Valeurs() {
   return (
     <section id="valeurs" className={style.valeurs}>
-        <h2 className="titleSection">Nos Valeurs</h2>
+        <h2 data-aos="fade-up" className="titleSection">Nos Valeurs</h2>
         <ol className={style.valeurs__list}>
             {/* VALEUR 1 : PROXIMITE */}
-            <li className={style.valeurs__list__element}>
+            <li data-aos="fade-up" className={style.valeurs__list__element}>
                 <div className={style.valeurs__list__element__number}>
                   <Image src={Valeur1} alt="1" width={50} height={118} />
                 </div>
@@ -22,7 +22,7 @@ export default function Valeurs() {
             </li>
 
             {/* VALEUR 2 : FLEXIBILITE */}
-            <li className={style.valeurs__list__element}>
+            <li data-aos="fade-up" className={style.valeurs__list__element}>
                 <div className={style.valeurs__list__element__number}>
                   <Image src={Valeur2} alt="2" width={60} height={117} />
                 </div>
@@ -33,7 +33,7 @@ export default function Valeurs() {
             </li>
 
             {/* VALEUR 3 : QUALITE */}
-            <li className={style.valeurs__list__element}>
+            <li data-aos="fade-up" className={style.valeurs__list__element}>
                 <div className={style.valeurs__list__element__number}>
                   <Image src={Valeur3} alt="3" width={60} height={119} />
                 </div>

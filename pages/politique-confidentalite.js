@@ -8,7 +8,7 @@ export default function PolitiqueConfidentalite() {
   return (<>
     <Head>
         <title>Spics - Politique de confidentialité</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex, nofollow" />
     </Head>
     <div>
         <Hero 

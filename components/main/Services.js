@@ -10,8 +10,8 @@ export default function Services() {
 
   return (
     <section id="services" className={style.services}>
-      <h2 className={`titleSection ${style.titleService}`}>Nos Services</h2>
-      <p className={style.sloganService}>Nous développons des solutions adaptées à vos besoins</p>
+      <h2 data-aos="fade-up" className={`titleSection ${style.titleService}`}>Nos Services</h2>
+      <p data-aos="fade-up" className={style.sloganService}>Nous développons des solutions adaptées à vos besoins</p>
       <div className={style.listCards}>
 
         {/* UX / UI DESIGN */}

@@ -13,6 +13,7 @@ body {
   font-size: 1.3rem;
   color: $color-txt-primary;
   width: 100%;
+  overflow-x: hidden !important; // fix bug with aos (lib animation)
 }
 
 /* Links */
@@ -416,11 +417,11 @@ a.active::after {
   
         h2 {
           margin-bottom: 20px;
-          font-size: 3rem;
+          font-size: 2.8rem;
         }
   
         p {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
       }
 
@@ -461,13 +462,13 @@ a.active::after {
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
   .titleSection {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     padding-top: 50px;
   }
   .titleService {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 50px 0;
   }
   .gradientTextBig {
@@ -481,11 +482,11 @@ a.active::after {
   
         h2 {
           margin-bottom: 25px;
-          font-size: 3.5rem;
+          font-size: 3rem;
         }
   
         p {
-          font-size: 2.2rem;
+          font-size: 1.8rem;
         }
       }
 

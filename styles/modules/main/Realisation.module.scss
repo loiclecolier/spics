@@ -235,10 +235,19 @@
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
     .realisation {
+        padding-bottom: 60px;
+        &__image {
+            max-width: 550px;
+        }
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .realisation {
         padding-bottom: 70px;
         &__image {
             max-width: 650px;
         }
     }
-
 }

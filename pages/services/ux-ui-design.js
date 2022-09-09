@@ -25,17 +25,17 @@ export default function UXUIDesign() {
       />
       <main className={style.design}>
         <section className={style.design__description}>
-          <h2 className="titleService">L&apos;UX / UI Design, c&apos;est quoi ?</h2>
-          <div className={style.design__description__content}>
+          <h2 data-aos="fade-up" className="titleService">L&apos;UX / UI Design, c&apos;est quoi ?</h2>
+          <div data-aos="fade-up" className={style.design__description__content}>
 
             <div className={style.design__description__ux}>
-              <h3 className={style.design__description__subtitle}>
+              <h3 data-aos="fade-up" className={style.design__description__subtitle}>
                 <span className="gradientTextBig">UX</span> (User Experience)
               </h3>
-              <p className={style.design__description__text}>
+              <p data-aos="fade-up" className={style.design__description__text}>
                 L’UX fait référence à l’<strong>expérience d’un utilisateur</strong> sur un site web. Il y a de nombreux avantages à offrir l’expérience la plus <strong>intuitive</strong> et <strong>agréable</strong> possible à vos visiteurs en fonction de vos objectifs :
               </p>
-              <ul className={style.design__description__list}>
+              <ul data-aos="fade-up" className={style.design__description__list}>
                 <li>Augmentation du temps passé sur votre site par visiteur</li>
                 <li>Augmentation de votre nombre de clients</li>
                 <li>Augmentation de vos ventes</li>
@@ -44,24 +44,24 @@ export default function UXUIDesign() {
             </div>
             
             <div className={style.design__description__ui}>
-              <h3 className={`${style.design__description__subtitle} ${style.design__description__ui__subtitle}`}>
+              <h3 data-aos="fade-up" className={`${style.design__description__subtitle} ${style.design__description__ui__subtitle}`}>
                 <span className="gradientTextBig">UI</span> (User Interface)
               </h3>
-              <p className={style.design__description__text}>
+              <p data-aos="fade-up" className={style.design__description__text}>
                 L’UI fait référence à la conception de l’<strong>interface utilisateur</strong>, c’est-à-dire à l’ensemble des éléments graphiques qui composent un site web : boutons, images, typographie, couleurs, etc.
               </p>
-              <p className={style.design__description__text}>
+              <p data-aos="fade-up" className={style.design__description__text}>
                 Elle va de pair avec l’UX pour vous offrir un design <strong>qui correspond à votre activité</strong> et à votre image.
               </p>
             </div>
 
-            <p className={style.design__description__slogan}>Une bonne expérience utilisateur peut faire <strong>décoller votre activité</strong> !</p>
+            <p data-aos="fade-up" className={style.design__description__slogan}>Une bonne expérience utilisateur peut faire <strong>décoller votre activité</strong> !</p>
 
           </div>
         </section>
 
         <section className={style.design__competences}>
-          <h2 className="titleService">Nos Compétences</h2>
+          <h2 data-aos="fade-up" className="titleService">Nos Compétences</h2>
           <div className={style.design__competences__list}>
             <Competence
               img={PaintShapesIcon}

@@ -84,9 +84,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className={style.contact}>
-        <h2 className={`${style.contact__title} titleSection`}>Contact</h2>
+        <h2 data-aos="fade-up" className={`${style.contact__title} titleSection`}>Contact</h2>
         <CTAContact hasButton={false} />
-        <form onSubmit={handleSubmit} className={style.contact__form}>
+        <form data-aos="fade-up" onSubmit={handleSubmit} className={style.contact__form}>
             <div className={style.contact__form__line}>
                 <div className={style.contact__form__line__block}>
                     <label htmlFor="name">Nom</label>

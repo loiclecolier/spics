@@ -29,7 +29,7 @@ export default function Realisations() {
 
   return (
     <section id="realisations" className={style.realisations}>
-        <h2 className={`titleSection ${style.realisations__title}`}>Nos Réalisations</h2>
+        <h2 data-aos="fade-up" className={`titleSection ${style.realisations__title}`}>Nos Réalisations</h2>
         <Carousel
           showStatus={false}
           showThumbs={false}

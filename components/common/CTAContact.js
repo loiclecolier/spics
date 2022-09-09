@@ -12,7 +12,7 @@ export default function CTAContact(props) {
   const page = router.pathname;
 
   return (
-    <>
+    <div data-aos="fade-up">
       <div className={props.isService ? `${style.rocket} ${style.rocketService}` : `${style.rocket}`}>
         <Image src={Rocket} alt="" width={60} height={60} />
       </div>
@@ -31,6 +31,6 @@ export default function CTAContact(props) {
             </Link>
           )}
       </div>
-    </>
+    </div>
   )
 }

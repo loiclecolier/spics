@@ -26,16 +26,16 @@ export default function HebergementMaintenance() {
       />
       <main className={style.referencement}>
         <section className={style.referencement__description}>
-          <h2 className="titleService">Le SEO, c&apos;est quoi ?</h2>
-          <div className={style.referencement__description__content}>
-            <h3 className={style.referencement__description__subtitle}>
+          <h2 data-aos="fade-up" className="titleService">Le SEO, c&apos;est quoi ?</h2>
+          <div data-aos="fade-up" className={style.referencement__description__content}>
+            <h3 data-aos="fade-up" className={style.referencement__description__subtitle}>
               <span className="gradientTextBig">SEO</span> (Search Engine Optimization)
             </h3>
-            <p className={style.referencement__description__text1}>
+            <p data-aos="fade-up" className={style.referencement__description__text1}>
             Le SEO signifie Search Engine Optimization (<strong>Optimisation pour les moteurs de recherche en français)</strong> et désigne les techniques qui visent à <strong>améliorer le référencement naturel</strong> de votre site web.<br/>
             En d’autres termes, le but du SEO est que votre site se trouve dans <strong>les premiers résultats des moteurs de recherche</strong> (Google par exemple) en se basant sur des mots-clés.
             </p>
-            <div className={style.referencement__description__text2}>
+            <div data-aos="fade-up" className={style.referencement__description__text2}>
               <p>Avec une <strong>bonne visibilité</strong> sur les moteurs de recherche, vous <strong>augmentez le trafic</strong> sur votre site web, votre nombre de clients, de ventes, etc. Le SEO est <strong>essentiel</strong> pour votre activité !</p>
               <p>Nous optimisons votre <strong>référencement sur Google</strong> en priorité. Il représente plus de 90% des parts de marché des moteurs de recherche en Belgique et en France (mars 2022).</p>
             </div>
@@ -43,7 +43,7 @@ export default function HebergementMaintenance() {
         </section>
 
         <section className={style.referencement__competences}>
-          <h2 className="titleService">Nos Compétences</h2>
+          <h2 data-aos="fade-up" className="titleService">Nos Compétences</h2>
           <div className={style.referencement__competences__list}>
             <Competence
               img={DesktopMobileIcon}

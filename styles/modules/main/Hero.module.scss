@@ -23,6 +23,8 @@
     align-items: center;
     justify-content: center;
 
+    overflow-x: hidden !important; // fix bug with aos (lib animation)
+
     &__menuSocialNetworks {
         width: fit-content;
         position: absolute;
@@ -224,7 +226,6 @@
     }
 }
 
-
 /* TABLET */
 @media screen and (min-width: 768px) {
     .hero {
@@ -247,17 +248,17 @@
                 
                 h2.hero__main__titles__desktop {
                     display: block;
-                    font-size: 2.7rem;
+                    font-size: 2.5rem;
                     margin-top: 0;
                 }
 
                 h2 {
-                    font-size: 2.3rem;
+                    font-size: 2.2rem;
                 }
             }
     
             &__cta {
-                margin-top: 60px;
+                margin-top: 50px;
                 flex-direction: row;
     
                 a {
@@ -280,13 +281,31 @@
 @media screen and (min-width: 1024px) {
     .hero {
         &__main {
+            &__titles {
+                h1 {
+                    font-size: 12rem;
+                }
+                
+                h2.hero__main__titles__desktop {
+                    font-size: 2.7rem;
+                    margin-top: 10px;
+                }
+
+                h2 {
+                    font-size: 2.2rem;
+                }
+            }
+    
             &__cta {
                 a {
+                    font-size: 1.8rem;
+                    width: 320px;
                     padding: 15px 0 14px;
-
+    
                     &:first-child {
                         margin-right: 12px;
                     }
+
                     &:last-child {
                         margin-left: 12px;
                     }
@@ -297,7 +316,7 @@
 }
 
 /* LARGE DESKTOP */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .hero {
         &__main {
             &__titles {

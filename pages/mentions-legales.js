@@ -8,7 +8,7 @@ export default function MentionsLegales() {
   return (<>
     <Head>
         <title>Spics - Mentions légales</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex, nofollow" />
     </Head>
     <div>
         <Hero 

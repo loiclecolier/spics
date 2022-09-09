@@ -6,7 +6,7 @@ import React from 'react';
 export default function Card(props) {
   return (
     <Link href={props.link}>
-        <div className={style.card}>
+        <div data-aos="fade-up" className={style.card}>
             <div className={style.card__background}>
                 <div className={style.card__background__overlay}></div>
                 <Image layout="fill" placeholder="blur" src={props.srcImage} alt={props.altImage} />
