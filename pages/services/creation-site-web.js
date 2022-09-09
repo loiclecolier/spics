@@ -135,7 +135,7 @@ export default function CreationSiteWeb() {
               <div>
                 <img src="/assets/img/services/autres.jpg" alt="Randonneur au sommet d'une montagne" />
               </div>
-              <h2>ET BIEN D&apos;AUTRE...</h2>
+              <h2>ET BIEN D&apos;AUTRES...</h2>
               <p>Tous vos projets sont réalisables !</p>
             </div>
             
