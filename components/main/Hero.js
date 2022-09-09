@@ -16,17 +16,17 @@ export default function Hero() {
         <nav className={style.hero__menuSocialNetworks}>
           <ul>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="#">
                 <Image src={FacebookIcon} alt="Page Facebook Spics" width={15} height={15} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer"  href="#">
                 <Image src={InstagramIcon} alt="Instagram Spics" width={15} height={15} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
                 <Image src={LinkedinIcon} alt="LinkedIn Spics" width={15} height={15} />
               </a>
             </li>

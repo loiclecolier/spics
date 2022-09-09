@@ -31,17 +31,17 @@ export default function Footer() {
                 <nav className={style.footer__block__contact__menuSocialNetworks}>
                     <ul>
                         <li>
-                            <a target="_blank" href="#">
+                            <a target="_blank" rel="noreferrer" href="#">
                                 <Image src={FacebookIcon} alt="Page Facebook Spics" width={18} height={18} />
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="#">
+                            <a target="_blank" rel="noreferrer" href="#">
                                 <Image src={InstagramIcon} alt="Instagram Spics" width={18} height={18} />
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="#">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
                                 <Image src={LinkedinIcon} alt="LinkedIn Spics" width={18} height={18} />
                             </a>
                         </li>

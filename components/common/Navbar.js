@@ -124,17 +124,17 @@ export default function Navbar() {
         <nav className={style.navContent__menuSocialNetworks}>
           <ul>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="#">
                 <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="#">
                 <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
                 <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
               </a>
             </li>
@@ -257,17 +257,17 @@ export default function Navbar() {
         <nav className={style.navbar__socialNetworks}>
           <ul>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="#">
                 <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="#">
                 <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
               </a>
             </li>
             <li>
-              <a target="_blank" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
                 <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
               </a>
             </li>
