@@ -7,8 +7,13 @@ import InstagramIcon from '../../public/assets/icons/instagram-colore.svg';
 import LinkedinIcon from '../../public/assets/icons/linkedin-colore.svg';
 import Link from 'next/link';
 import * as Scroll from 'react-scroll';
+import { useRouter } from 'next/router'
 
 export default function Footer() {
+
+    // get URL
+    const router = useRouter();
+    const page = router.pathname;
     
   return (
     <footer className={style.footer} id="footer">
@@ -48,16 +53,40 @@ export default function Footer() {
                 <nav>
                     <ul>
                         <li>
+                        {page === '/' ?
                             <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={500}>Services</Scroll.Link>
+                        :
+                            <Link href="/#services">
+                                <a>Services</a>
+                            </Link>
+                        }
                         </li>
                         <li>
-                            <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500}>Valeurs</Scroll.Link>
+                            {page === '/' ?
+                                <Scroll.Link to="valeurs" spy={true} smooth={true} offset={-50} duration={500}>Valeurs</Scroll.Link>
+                            :
+                                <Link href="/#valeurs">
+                                    <a>Valeurs</a>
+                                </Link>
+                            }
                         </li>
                         <li>
-                            <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500}>Réalisations</Scroll.Link>
+                            {page === '/' ?
+                                <Scroll.Link to="realisations" spy={true} smooth={true} offset={-50} duration={500}>Réalisations</Scroll.Link>
+                            :
+                                <Link href="/#realisations">
+                                    <a>Réalisations</a>
+                                </Link>
+                            }
                         </li>
                         <li>
-                            <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>Contact</Scroll.Link>
+                        {page === '/' ?
+                                <Scroll.Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>Contact</Scroll.Link>
+                            :
+                                <Link href="/#contact">
+                                    <a>Contact</a>
+                                </Link>
+                            }
                         </li>
                         <li>
                             <Link href="/mentions-legales">

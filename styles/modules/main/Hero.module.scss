@@ -51,26 +51,26 @@
 
             h1 {
                 font-family: $font-spics;
-                font-size: 60px;
+                font-size: 6rem;
                 letter-spacing: 0.03em;
 
                 span {
                     display: block;
                     font-family: $font-default;
-                    font-size: 20px;
+                    font-size: 2rem;
                     letter-spacing: 0;
                 }
             }
 
             h2 {
-                font-size: 15px;
+                font-size: 1.5rem;
                 margin-top: 10px;
                 line-height: 1.2em;
             }
 
             div {
                 margin-top: 5px;
-                font-size: 12px;
+                font-size: 1.2rem;
             }
         }
 
@@ -97,7 +97,7 @@
         animation: animate-icon-scroll 2.5s infinite;
 
         span {
-            font-size: 8px;
+            font-size: 0.8rem;
             margin-top: -5px;
             color: $color-txt-contrast;
         }
@@ -125,30 +125,30 @@
                 margin-bottom: 5vh;
     
                 h1 {
-                    font-size: 90px;
+                    font-size: 9rem;
                     letter-spacing: 0.03em;
     
                     span {
-                        font-size: 25px;
+                        font-size: 2.5rem;
                     }
                 }
     
                 h2 {
-                    font-size: 20px;
+                    font-size: 2rem;
                     margin-top: 20px;
                     line-height: 1.2em;
                 }
     
                 div {
                     margin-top: 5px;
-                    font-size: 17px;
+                    font-size: 1.7rem;
                 }
             }
     
             &__cta a {
 
                 width: 280px;
-                font-size: 18px;
+                font-size: 1.8rem;
                 padding: 13px 10px 10px 10px;
     
                 &:first-child {
@@ -160,7 +160,7 @@
         &__discover {
 
             span {
-                font-size: 12px;
+                font-size: 1.2rem;
                 margin-top: -2px;
                 color: $color-txt-contrast;
             }
@@ -182,24 +182,24 @@
     
                 h1 {
                     font-family: $font-spics;
-                    font-size: 60px;
+                    font-size: 6rem;
                     letter-spacing: 0.03em;
     
                     span {
                         display: block;
                         font-family: $font-default;
-                        font-size: 20px;
+                        font-size: 2rem;
                         letter-spacing: 0;
                     }
                 }
     
                 h2 {
-                    font-size: 18px;
+                    font-size: 1.8rem;
                     margin-top: 15px;
                 }
     
                 div {
-                    font-size: 14px;
+                    font-size: 1.4rem;
                 }
             }
     
@@ -208,7 +208,7 @@
     
                 & a {
                     margin: auto;
-                    font-size: 13px;
+                    font-size: 1.3rem;
                     width: 200px;
     
                     &:first-child {
@@ -242,17 +242,17 @@
                 }
 
                 h1 {
-                    font-size: 100px;
+                    font-size: 10rem;
                 }
                 
                 h2.hero__main__titles__desktop {
                     display: block;
-                    font-size: 27px;
+                    font-size: 2.7rem;
                     margin-top: 0;
                 }
 
                 h2 {
-                    font-size: 23px;
+                    font-size: 2.3rem;
                 }
             }
     
@@ -302,22 +302,22 @@
         &__main {
             &__titles {
                 h1 {
-                    font-size: 140px;
+                    font-size: 14rem;
                 }
                 
                 h2.hero__main__titles__desktop {
-                    font-size: 32px;
+                    font-size: 3.2rem;
                     margin-top: 10px;
                 }
 
                 h2 {
-                    font-size: 27px;
+                    font-size: 2.7rem;
                 }
             }
     
             &__cta {
                 a {
-                    font-size: 20px;
+                    font-size: 2rem;
                     width: 320px;
                     padding: 18px 0 17px;
     

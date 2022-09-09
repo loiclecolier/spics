@@ -6,8 +6,11 @@
 * {
   font-family: $font-default;
 }
-html, body {
-  font-size: 13px;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.3rem;
   color: $color-txt-primary;
   width: 100%;
 }
@@ -58,7 +61,7 @@ a.active::after {
   width: 200px;
   padding: 12.5px 10px 10px 10px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 1.3rem;
   z-index: 1;
   text-align: center;
   border: none;
@@ -91,13 +94,13 @@ a.active::after {
   width: 200px;
   padding: 12.5px 10px 10px 10px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 /* Titles */
 .titleSection {
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   padding-top: 40px;
@@ -112,7 +115,7 @@ a.active::after {
 }
 .titleService {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 30px 0;
 }
 .gradientTextBig {
@@ -125,7 +128,7 @@ a.active::after {
           background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: bold;
   padding-right: 3px;
 }
@@ -231,7 +234,7 @@ a.active::after {
         color: $color-txt-contrast;
         font-weight: bold;
         margin-bottom: 12px;
-        font-size: 18px;
+        font-size: 1.8rem;
         letter-spacing: -0.02em;
       }
 
@@ -298,7 +301,7 @@ a.active::after {
 /* LARGE MOBILE */
 @media screen and (min-width: 375px) {
   .titleSection {
-    font-size: 30px;
+    font-size: 3rem;
     padding-top: 50px;
   }
   .titleSection::after {
@@ -306,11 +309,11 @@ a.active::after {
     margin: 7.5px auto 0;
   }
   .titleService {
-    font-size: 23px;
+    font-size: 2.3rem;
     padding: 35px 0;
   }
   .gradientTextBig {
-    font-size: 55px;
+    font-size: 5.5rem;
   }
   /* Carousel "Création de site web" */
   #creation {
@@ -320,11 +323,11 @@ a.active::after {
   
         h2 {
           margin-bottom: 15px;
-          font-size: 22px;
+          font-size: 2.2rem;
         }
   
         p {
-          font-size: 15px;
+          font-size: 1.5rem;
         }
       }
 
@@ -398,12 +401,12 @@ a.active::after {
     }
   }
   .titleService {
-    font-size: 27.5px;
+    font-size: 2.75rem;
     text-align: center;
     padding: 40px 0;
   }
   .gradientTextBig {
-    font-size: 65px;
+    font-size: 6.5rem;
   }
    /* Carousel "Création de site web" */
    #creation {
@@ -413,11 +416,11 @@ a.active::after {
   
         h2 {
           margin-bottom: 20px;
-          font-size: 30px;
+          font-size: 3rem;
         }
   
         p {
-          font-size: 18px;
+          font-size: 1.8rem;
         }
       }
 
@@ -458,17 +461,17 @@ a.active::after {
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
   .titleSection {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     padding-top: 50px;
   }
   .titleService {
-    font-size: 35px;
+    font-size: 3.5rem;
     padding: 50px 0;
   }
   .gradientTextBig {
-    font-size: 80px;
+    font-size: 8rem;
   }
   /* Carousel "Création de site web" */
   #creation {
@@ -478,11 +481,11 @@ a.active::after {
   
         h2 {
           margin-bottom: 25px;
-          font-size: 35px;
+          font-size: 3.5rem;
         }
   
         p {
-          font-size: 22px;
+          font-size: 2.2rem;
         }
       }
 
@@ -518,11 +521,11 @@ a.active::after {
     padding-top: 60px;
   }
   .titleService {
-    font-size: 40px;
+    font-size: 4rem;
     padding: 60px 0;
   }
   .gradientTextBig {
-    font-size: 100px;
+    font-size: 10rem;
   }
     /* Carousel "Création de site web" */
     #creation {
@@ -532,11 +535,11 @@ a.active::after {
     
           h2 {
             margin-bottom: 30px;
-            font-size: 38px;
+            font-size: 3.8rem;
           }
     
           p {
-            font-size: 25px;
+            font-size: 2.5rem;
           }
         }
 

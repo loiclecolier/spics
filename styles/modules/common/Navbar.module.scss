@@ -58,7 +58,7 @@
     a { color: $color-txt-contrast; }
 
     &__menu {
-        font-size: 22px;
+        font-size: 2.2rem;
         letter-spacing: -0.02em;
         font-weight: bold;
 
@@ -67,7 +67,7 @@
             top: 0;
             right: 20px;
             color: #FFF;
-            font-size: 35px;
+            font-size: 3.5rem;
             cursor: pointer;
         }
 
@@ -76,7 +76,7 @@
         }
 
         &__submenu {
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: normal;
 
             li {
@@ -167,7 +167,7 @@
                 color: $color-txt-contrast;
                 letter-spacing: 0.01em;
                 font-weight: bold;
-                font-size: 13px;
+                font-size: 1.3rem;
 
                 &__drop {
                     cursor: pointer;
@@ -243,13 +243,13 @@
 
                 li {
                     margin-bottom: 12px;
-                    font-size: 15px;
+                    font-size: 1.5rem;
                 }
             }
 
             &__link {
                 letter-spacing: 0.02em;
-                font-size: 16px;
+                font-size: 1.6rem;
             }
 
             ul {
@@ -286,12 +286,12 @@
 
                 li {
                     margin-bottom: 13px;
-                    font-size: 16px;
+                    font-size: 1.6rem;
                 }
             }
 
             &__link {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
 
             ul {
