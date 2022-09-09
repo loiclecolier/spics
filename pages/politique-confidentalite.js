@@ -31,6 +31,7 @@ export default function PolitiqueConfidentalite() {
             <li>Nom et prénom de la personne de contact</li>
             <li>Adresse email de la personne de contact</li>
             <li>Numéro de téléphone de la personne de contact</li>
+            <li>Adresse de la personne de contact / de l&apos;entreprise de la personne de contact</li>
         </ul>
 
         <p>Ces données sont utilisées uniquement dans le cadre de la relation commerciale avec le client, pour les finalités suivantes :</p>
@@ -48,7 +49,7 @@ export default function PolitiqueConfidentalite() {
         <ul>
             <li>Nom et prénom de la personne de contact (si utilisation du formulaire de contact)</li>
             <li>Adresse email de la personne de contact  (si utilisation du formulaire de contact)</li>
-            <li>Données de navigation</li>
+            <li>Données de navigation (adresse IP, ID, géolocalisation, recherches sur le site,...)</li>
         </ul>
         <p>Ces données sont utilisées pour les finalités suivantes :</p>
         <ul>
