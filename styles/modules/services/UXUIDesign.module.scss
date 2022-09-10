@@ -1,0 +1,268 @@
+@import 'libs/variables';
+
+/* SMALL MOBILE */
+.design {
+    margin: auto;
+
+    &__description {
+        padding: 0 25px;
+
+        &__content {
+            max-width: 1070px;
+            margin: auto;
+        }
+
+        &__subtitle {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        &__text {
+            font-size: 1.3rem;
+            line-height: 1.5em;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__list {
+            margin-top: 5px;
+            padding-left: 20px;
+            list-style-type: disc;
+            line-height: 1.5em;
+        }
+
+        &__ui {
+
+            &__subtitle {
+                margin-top: 25px;
+            }
+        }
+
+        &__slogan {
+            font-size: 1.5rem;
+            line-height: 1.5em;
+            margin-top: 25px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__competences {
+        background-color: $color-bg-secondary;
+        padding: 1px 25px;
+
+        h2 {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__contact {
+        padding-bottom: 30px;
+    }
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+    .design {
+    
+        &__description {
+    
+            &__subtitle {
+                font-size: 1.5rem;
+            }
+    
+            &__text {
+                font-size: 1.4rem;
+                margin-top: 7px;
+                margin-bottom: 12px;
+            }
+    
+            &__list {
+                font-size: 1.4rem;
+                padding-left: 25px;
+            }
+    
+            &__ui {
+    
+                &__subtitle {
+                    margin-top: 25px;
+                }
+            }
+    
+            &__slogan {
+                font-size: 1.6rem;
+                padding-bottom: 35px;
+            }
+        }
+
+        
+        &__competences {
+            h2 {
+                padding-bottom: 25px;
+            }
+        }
+    
+        &__contact {
+            padding-bottom: 35px;
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .design {
+        &__description {
+            background-image: url(../../../public/assets/background/spics-to-left-valeurs.svg);
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: 120% 40%;
+            padding-bottom: 30px;
+
+            &__subtitle {
+                font-size: 1.6rem;
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                margin-top: 10px;
+            }
+    
+            &__list {
+                font-size: 1.5rem;
+                padding-left: 30px;
+            }
+
+            &__ux {
+                margin: auto;
+                max-width: 500px;
+            }
+    
+            &__ui {
+                margin: auto;
+                max-width: 500px;
+    
+                &__subtitle {
+                    margin-top: 30px;
+                }
+            }
+    
+            &__slogan {
+                font-size: 1.8rem;
+                text-align: center;
+                background-color: $color-bg-secondary;
+                width: fit-content;
+                margin: 40px auto 0;
+                padding: 15px 20px;
+                border-radius: 5px;
+            }
+        }
+
+        &__competences {
+            h2 {
+                padding-bottom: 0px;
+            }
+        }
+
+        &__contact {
+            background-image: url(../../../public/assets/background/spics-to-right.svg);
+            background-repeat: no-repeat;
+            background-size: 15%;
+            background-position: 0% 10%;
+        }
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .design {
+        &__description {
+            padding-bottom: 50px;
+            background-size: 40%;
+            background-position: 120% 20%;
+
+            &__subtitle {
+                font-size: 1.8rem;
+            }
+
+            &__content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__text {
+                font-size: 1.6rem;
+            }
+    
+            &__list {
+                font-size: 1.6rem;
+                padding-left: 35px;
+            }
+
+            &__ux {
+                width: calc(50% - 15px);
+                max-width: 420px;
+                margin-right: 30px;
+            }
+    
+            &__ui {
+                width: calc(50% - 15px);
+                max-width: 420px;
+                margin-top: 0;
+    
+                &__subtitle {
+                    margin-top: 0;
+                }
+            }
+    
+            &__slogan {
+                font-size: 2rem;
+                padding: 20px 25px;
+            }
+        }
+
+        &__competences {
+            padding-bottom: 20px;
+
+            h2 {
+                padding-bottom: 15px;
+            }
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                max-width: 1070px;
+            }
+        }
+
+        &__contact {
+            background-size: 20%;
+            background-position: 0% 10%;
+        }
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .design {
+        &__description {
+            padding-bottom: 60px;
+            background-size: 30%;
+            background-position: 110% 10%;
+
+            &__subtitle {
+                font-size: 2rem;
+            }
+        }
+
+        &__competences {
+            h2 {
+                padding-bottom: 25px;
+            }
+        }
+
+        &__contact {
+            background-size: 10%;
+            background-position: 0% 10%;
+        }
+    }
+}

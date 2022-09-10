@@ -1,0 +1,158 @@
+/* SMALL MOBILE */
+.section {
+    max-width: 1070px;
+    margin: auto;
+    padding: 30px 15px;
+    line-height: 1.3em;
+
+    h1 {
+        font-weight: bold;
+        letter-spacing: -0.02em;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 15px;
+
+        ul {
+            margin-top: 5px;
+        }
+
+        li {
+            margin-top: 7.5px;
+        }
+
+        li:first-child {
+            margin-top: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+    .section {
+        padding: 35px 20px;
+        font-size: 1.5rem;
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12.5px;
+            margin-top: 22.5px;
+        }
+    
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 7.5px;
+            margin-top: 12.5px;
+        }
+    
+        ul {
+    
+            ul {
+                margin-top: 7.5px;
+            }
+    
+            li {
+                margin-top: 10px;
+            }
+        }
+    
+        p {
+            margin-bottom: 12.5px;
+            margin-top: 12.5px;
+        }
+    }    
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 40px 25px;
+        font-size: 1.6rem;
+    
+        h1 {
+            font-size: 2.5rem;
+        }
+    
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+    
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            margin-top: 22px;
+        }
+    
+        p {
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+    }    
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .section {
+        padding: 50px 25px;
+    
+        h1 {
+            font-size: 2.8rem;
+        }
+    
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 35px;
+        }
+    
+        h3 {
+            font-size: 2rem;
+            margin-top: 25px;
+        }
+    }    
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .section {
+        padding: 60px 25px;
+    
+        h1 {
+            font-size: 3rem;
+        }
+    
+        h2 {
+            font-size: 2.3rem;
+        }
+    
+        h3 {
+            font-size: 2.1rem;
+        }
+    }    
+}

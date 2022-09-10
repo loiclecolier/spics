@@ -1,0 +1,113 @@
+/* SMALL MOBILE */
+.valeurs {
+    padding: 0 25px 50px;
+
+    &__list {
+        margin-top: 35px;
+        list-style-type: none;
+        max-width: 1070px;
+
+        &__element {
+            display: flex;
+            justify-content: center;
+            max-width: 400px;
+            margin: 0 auto 45px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &__valeur {
+                padding-top: 10px;
+                width: 70%;
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 2.2rem;
+                    letter-spacing: -0.02em;
+                    transform: translateX(-15px);
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    margin-top: 10px;
+                    padding-left: 15px;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+    .valeurs {
+    
+        &__list {
+    
+            &__element {
+                margin: 0 auto 50px;
+    
+                &__valeur {
+                    padding-top: 12px;
+    
+                    h3 {
+                        font-size: 2.4rem;
+                        transform: translateX(-13px);
+                    }
+    
+                    p {
+                        font-size: 1.6rem;
+                        padding-left: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .valeurs {
+        background-image: url(../../../public/assets/background/spics-to-left-valeurs.svg);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: 120% 10%;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .valeurs {
+    
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin: 50px auto 30px;
+    
+            &__element {
+                width: 50%;
+
+                &__number img {
+                    height: 150px !important;
+                }
+    
+                &__valeur {
+                    padding-top: 10px;
+    
+                    h3 {
+                        font-size: 3rem;
+                        transform: translateX(-15px);
+                    }
+    
+                    p {
+                        font-size: 1.6rem;
+                        margin-top: 15px;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

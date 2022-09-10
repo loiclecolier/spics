@@ -1,0 +1,205 @@
+@import 'libs/variables';
+
+/* SMALL MOBILE */
+.referencement {
+    margin: auto;
+
+    &__description {
+        padding: 0 25px;
+
+        &__content {
+            max-width: 1070px;
+            margin: auto;
+        }
+
+        &__subtitle {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        &__text1, &__text2 {
+            font-size: 1.3rem;
+            line-height: 1.5em;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__text1 {
+            margin-bottom: 15px;
+        }
+
+        &__text2 {
+            padding-bottom: 20px;
+
+            p:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__competences {
+        background-color: $color-bg-secondary;
+        padding: 1px 25px;
+
+        h2 {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__contact {
+        padding-bottom: 30px;
+    }
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+    .referencement {
+    
+        &__description {
+    
+            &__subtitle {
+                font-size: 1.5rem;
+            }
+    
+            &__text1, &__text2 {
+                font-size: 1.4rem;
+                margin-top: 7px;
+                margin-bottom: 12px;
+            }
+
+            &__text2 {
+                padding-bottom: 25px;
+            }
+        }
+
+        
+        &__competences {
+            h2 {
+                padding-bottom: 25px;
+            }
+        }
+    
+        &__contact {
+            padding-bottom: 35px;
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .referencement {
+        &__description {
+            background-image: url(../../../public/assets/background/spics-to-left-valeurs.svg);
+            background-repeat: no-repeat;
+            background-size: 40%;
+            background-position: 120% 40%;
+            padding-bottom: 30px;
+
+            &__content {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            &__subtitle {
+                font-size: 1.6rem;
+            }
+
+            &__text1, &__text2 {
+                font-size: 1.5rem;
+                margin-top: 10px;
+            }
+        }
+
+        &__competences {
+            h2 {
+                padding-bottom: 0px;
+            }
+        }
+
+        &__contact {
+            background-image: url(../../../public/assets/background/spics-to-right.svg);
+            background-repeat: no-repeat;
+            background-size: 15%;
+            background-position: 0% 10%;
+        }
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .referencement {
+        &__description {
+            padding-bottom: 50px;
+            background-size: 40%;
+            background-position: 120% 20%;
+
+            &__content {
+                max-width: 1070px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__subtitle {
+                font-size: 1.8rem;
+                width: 100%;
+            }
+
+            &__content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__text1, &__text2 {
+                font-size: 1.6rem;
+                width: 50%;
+                max-width: 447px;
+            }
+        }
+
+        &__competences {
+            padding-bottom: 20px;
+
+            h2 {
+                padding-bottom: 15px;
+            }
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                max-width: 1070px;
+            }
+        }
+
+        &__contact {
+            background-size: 20%;
+            background-position: 0% 10%;
+        }
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .referencement {
+        &__description {
+            padding-bottom: 60px;
+            background-size: 30%;
+            background-position: 110% 10%;
+
+            &__subtitle {
+                font-size: 2rem;
+            }
+        }
+
+        &__competences {
+            h2 {
+                padding-bottom: 25px;
+            }
+        }
+
+        &__contact {
+            background-size: 10%;
+            background-position: 0% 10%;
+        }
+    }
+}

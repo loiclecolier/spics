@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Tuffy';
+    src: url('../../public/assets/fonts/tuffy/Tuffy.eot');
+    src: url('../../public/assets/fonts/tuffy/Tuffy.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/tuffy/Tuffy.woff2') format('woff2'),
+        url('../../public/assets/fonts/tuffy/Tuffy.woff') format('woff'),
+        url('../../public/assets/fonts/tuffy/Tuffy.ttf') format('truetype'),
+        url('../../public/assets/fonts/tuffy/Tuffy.svg#Tuffy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tuffy';
+    src: url('../../public/assets/fonts/tuffy/Tuffy-Bold.eot');
+    src: url('../../public/assets/fonts/tuffy/Tuffy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/tuffy/Tuffy-Bold.woff2') format('woff2'),
+        url('../../public/assets/fonts/tuffy/Tuffy-Bold.woff') format('woff'),
+        url('../../public/assets/fonts/tuffy/Tuffy-Bold.ttf') format('truetype'),
+        url('../../public/assets/fonts/tuffy/Tuffy-Bold.svg#Tuffy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('../../public/assets/fonts/tw-cen-mt/TwCenMT-Bold.eot');
+    src: url('../../public/assets/fonts/tw-cen-mt/TwCenMT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/fonts/tw-cen-mt/TwCenMT-Bold.woff2') format('woff2'),
+        url('../../public/assets/fonts/tw-cen-mt/TwCenMT-Bold.woff') format('woff'),
+        url('../../public/assets/fonts/tw-cen-mt/TwCenMT-Bold.ttf') format('truetype'),
+        url('../../public/assets/fonts/tw-cen-mt/TwCenMT-Bold.svg#TwCenMT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

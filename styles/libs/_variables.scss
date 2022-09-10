@@ -1,0 +1,45 @@
+/*
+----------
+- COLORS -
+----------
+*/
+
+// Text
+$color-txt-primary: #444;
+$color-txt-secondary: #888;
+$color-txt-contrast: #FFF;
+$color-txt-link: #2B68CE;
+$color-txt-link-hover: #2647C5;
+$color-txt-error: #E73939;
+
+// Background
+$color-bg-primary: #FFF;
+$color-bg-secondary: #EDF2FA;
+$color-bg-overlay-services: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+$color-bg-services: rgba(0, 38, 111, 0.5);
+$color-bg-primary-btn: linear-gradient(90deg, #2647C5 0%, #349FDD 100%);
+$color-bg-primary-btn-hover: linear-gradient(90deg, #233ea7 0%, #338bbe 100%);
+$color-bg-secondary-btn: #FFF;
+$color-bg-info: #D0EEFF;
+
+// Icons
+$color-icon-primary-l-to-r: linear-gradient(90deg, #2647C5 0%, #349FDD 100%);
+$color-icon-primary-r-to-l: linear-gradient(90deg, #349FDD 0%, #2647C5 100%);
+$color-icon-secondary: linear-gradient(180deg, rgba(38, 71, 197, 0.2) 0%, rgba(52, 159, 221, 0.2) 100%);
+$color-icon-contrast: #FFF;
+
+// Inputs
+$color-input-border: #BFBFBF;
+$color-input-border-focus: #444;
+$color-input-border-error: #E73939;
+$color-input-bg: #FFF;
+
+
+/*
+---------
+- FONTS -
+---------
+*/
+
+$font-spics: 'Tw Cen MT', serif;
+$font-default: 'Tuffy', serif;

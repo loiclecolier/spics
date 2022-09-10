@@ -1,0 +1,163 @@
+@import 'libs/variables';
+
+/* SMALL MOBILE */
+.rocket {
+    display: block;
+    margin: 35px 25px -35px;
+}
+.CTAContact {
+    background: $color-bg-secondary;
+    padding: 60px 25px 30px;
+
+    &__title {
+        color: $color-txt-primary;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    &__description {
+        margin-top: 12px;
+        line-height: 1.4em;
+    }
+
+    &__button {
+        margin-top: 25px;
+    }
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+    .rocket {
+        margin: 40px 25px -40px;
+
+        img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+    }
+    
+    .CTAContact {
+        padding: 70px 25px 30px;
+    
+        &__title {
+            font-size: 2.5rem;
+        }
+    
+        &__description {
+            margin-top: 15px;
+            font-size: 1.6rem;
+        }
+    
+        &__button {
+            font-size: 1.6rem;
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .rocket {
+        margin: 45px 10vw -45px;
+
+        img {
+            width: 80px !important;
+            height: 80px !important;
+        }
+    }
+
+    .CTAContact {
+        text-align: center;
+
+        &__description {
+            span {
+                display: block;
+            }
+        }
+
+        &__button {
+            margin: 25px auto 0;
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .CTAContact{
+        padding-top: 35px;
+    }
+
+    .CTAContactService {
+        max-width: 1030px;
+        width: 80%;
+        margin: 0 auto 60px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(34, 34, 34, 0.2);
+    }
+
+    .rocket {
+        margin: 45px 10vw -45px;
+        margin-top: 0;
+        padding-top: 45px;
+
+        img {
+            width: 90px !important;
+            height: 90px !important;
+        }
+    }
+
+    .rocketService {
+        text-align: center;
+        transform: translateX(-230px);
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .rocket {
+        margin: 55px 10vw -50px;
+        margin-top: 0;
+        padding-top: 55px;
+
+        img {
+            width: 85px !important;
+            height: 85px !important;
+        }
+    }
+
+    .rocketService {
+        transform: translateX(-300px);
+    }
+    
+    .CTAContact {
+    
+        &__title {
+            font-size: 2.5rem;
+        }
+    
+        &__description {
+            margin-top: 18px;
+            font-size: 1.5rem;
+        }
+    
+        &__button {
+            font-size: 1.8rem;
+            width: 310px;
+            padding: 12.5px;
+            margin-top: 30px;
+        }
+    }
+
+    .CTAContactService {
+        margin: 0 auto 60px;
+    }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1440px) {
+    .rocketService {
+        transform: translateX(-380px);
+    }
+    .CTAContactService {
+        margin: 0 auto 100px;
+    }
+}

@@ -1,0 +1,43 @@
+/* SMALL MOBILE */
+.sloganService {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 12px 10vw 30px;
+    line-height: 1.3em;
+}
+
+/* LARGE MOBILE */
+@media screen and (min-width: 375px) {
+    .sloganService {
+        font-size: 1.8rem;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .services {
+        background-image: url(../../../public/assets/background/spics-to-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .listCards {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1070px;
+        margin: auto;
+        padding: 0 25px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .sloganService {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .listCards {
+        margin-top: 40px;
+        padding: 0;
+    }
+}
