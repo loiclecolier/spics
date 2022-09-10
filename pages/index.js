@@ -14,7 +14,14 @@ export default function Home() {
   const { data: session, status } = useSession()
   const loading = status === "loading"
   if (loading) {
-    return <p>Loading...</p>
+    return <p style={{
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100vh",
+      fontSize: "25px"
+    }}>Chargement...</p>
   }
 
   return (
