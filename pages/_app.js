@@ -3,6 +3,7 @@ import '../styles/globals.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { SessionProvider } from "next-auth/react";
 
 function MyApp({ Component, pageProps }) {
 
@@ -15,9 +16,11 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return <>
-    <Container>
-      <Component {...pageProps} />
-    </Container>
+    <SessionProvider session={pageProps.session}>
+      <Container>
+        <Component {...pageProps} />
+      </Container>
+    </SessionProvider>
   </>
 }
 
