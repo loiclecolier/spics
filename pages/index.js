@@ -20,7 +20,8 @@ export default function Home() {
       justifyContent: "center",
       alignItems: "center",
       height: "100vh",
-      fontSize: "25px"
+      fontSize: "25px",
+      padding: "0 25px"
     }}>Chargement...</p>
   }
 
@@ -32,9 +33,10 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh"
+          height: "100vh",
+          padding: "0 25px"
         }}>
-          <p style={{marginBottom: "20px", fontSize: "25px"}}>Vous n&apos;avez pas la permission de voir cette page.</p>
+          <p style={{marginBottom: "20px", fontSize: "25px", textAlign: "center"}}>Vous n&apos;avez pas la permission de voir cette page.</p>
           <button style={{
             fontSize: "18px",
             padding: "15px 20px",

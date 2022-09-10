@@ -17,9 +17,11 @@ export default NextAuth({
         if (isCorrectCredentials(credentials)) {
           const user = { id: 1, name: "Admin" }
           return user;
+        } else {
+          return null;
         }
-        return null;
       },
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET
 })
