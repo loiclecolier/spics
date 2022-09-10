@@ -1,6 +1,0 @@
-{
-    "rewrites": [
-      {"source": "/:match*", "destination": "https://be-spics.com/:match*"},
-      {"source": "/dev-spics/:match*", "destination": "https://dev.be-spics.com/:match*"}
-    ]
-  }
