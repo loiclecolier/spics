@@ -2,8 +2,8 @@ import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 
 const isCorrectCredentials = credentials =>
-  credentials.username === process.env.NEXT_PUBLIC_USERNAME &&
-  credentials.password === process.env.NEXT_PUBLIC_PASSWORD
+  credentials.username === process.env.NEXTAUTH_USERNAME &&
+  credentials.password === process.env.NEXTAUTH_PASSWORD
 
 export default NextAuth({
   providers: [
@@ -13,7 +13,7 @@ export default NextAuth({
         username: { label: "Username", type: "text" },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials) {
+      async authorize(credentials, req) {
         if (isCorrectCredentials(credentials)) {
           const user = { id: 1, name: "Admin" }
           return user;
