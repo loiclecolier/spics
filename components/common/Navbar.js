@@ -1,7 +1,7 @@
 import style from '../../styles/modules/common/Navbar.module.scss'
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import LogoSpics from '../../public/assets/icons/logo-spics.svg';
+import LogoSpicx from '../../public/assets/icons/logo-spicx.svg';
 import BurgerMenuIcon from '../../public/assets/icons/burger-menu.svg';
 import FacebookIcon from '../../public/assets/icons/facebook-blanc.svg';
 import InstagramIcon from '../../public/assets/icons/instagram-blanc.svg';
@@ -128,18 +128,18 @@ export default function Navbar() {
           <nav className={style.navContent__menuSocialNetworks}>
             <ul>
               <li>
-                <a target="_blank" rel="noreferrer" href="#">
-                  <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100085689700690">
+                  <Image src={FacebookIcon} alt="Page Facebook Spicx" width={20} height={20} />
                 </a>
               </li>
               <li>
-                <a target="_blank" rel="noreferrer" href="#">
-                  <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/spicx.be/">
+                  <Image src={InstagramIcon} alt="Instagram Spicx" width={20} height={20} />
                 </a>
               </li>
               <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
-                  <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/spicx">
+                  <Image src={LinkedinIcon} alt="LinkedIn Spicx" width={20} height={20} />
                 </a>
               </li>
             </ul>
@@ -153,7 +153,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/politique-confidentalite">
+                <Link href="/politique-confidentialite">
                   <a onClick={handleNav}>Politique de confidentialité</a>
                 </Link>
               </li>
@@ -167,18 +167,18 @@ export default function Navbar() {
             <Link href="/">
               <a className={style.navbar__image}>
                 <Image
-                  src={LogoSpics}
-                  alt="Logo Spics"
+                  src={LogoSpicx}
+                  alt="Logo Spicx"
                   width={100}
                   height={35}
                 />
               </a>
             </Link>
             : // Si page principale -> smooth scroll
-            <Scroll.Link to="topPage" spy={true} smooth={true} duration={500} className={`${style.navbar__image} ${"logoSpics"}`}>
+            <Scroll.Link to="topPage" spy={true} smooth={true} duration={500} className={`${style.navbar__image} ${"logoSpicx"}`}>
               <Image
-                src={LogoSpics}
-                alt="Logo Spics"
+                src={LogoSpicx}
+                alt="Logo Spicx"
                 width={100}
                 height={35}
               />
@@ -261,18 +261,18 @@ export default function Navbar() {
           <nav className={style.navbar__socialNetworks}>
             <ul>
               <li>
-                <a target="_blank" rel="noreferrer" href="#">
-                  <Image src={FacebookIcon} alt="Page Facebook Spics" width={20} height={20} />
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100085689700690">
+                  <Image src={FacebookIcon} alt="Page Facebook Spicx" width={20} height={20} />
                 </a>
               </li>
               <li>
-                <a target="_blank" rel="noreferrer" href="#">
-                  <Image src={InstagramIcon} alt="Instagram Spics" width={20} height={20} />
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/spicx.be/">
+                  <Image src={InstagramIcon} alt="Instagram Spicx" width={20} height={20} />
                 </a>
               </li>
               <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
-                  <Image src={LinkedinIcon} alt="LinkedIn Spics" width={20} height={20} />
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/spicx">
+                  <Image src={LinkedinIcon} alt="LinkedIn Spicx" width={20} height={20} />
                 </a>
               </li>
             </ul>

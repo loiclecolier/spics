@@ -30,25 +30,25 @@ export default function Footer() {
                         <ul>
                             <li>Loïc Lécolier</li>
                             <li><a href="tel:+32478651887">+32 478 65 18 87</a></li>
-                            <li><a href="mailto:contact@be-spics.com">contact@be-spics.com</a></li>
+                            <li><a href="mailto:contact@spicx.be">contact@spicx.be</a></li>
                             <li>7730 Néchin <br/>59B Rue des Saules</li>
                         </ul>
                     </address>
                     <nav className={style.footer__block__contact__menuSocialNetworks}>
                         <ul>
                             <li>
-                                <a target="_blank" rel="noreferrer" href="#">
-                                    <Image src={FacebookIcon} alt="Page Facebook Spics" width={18} height={18} />
+                                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100085689700690">
+                                    <Image src={FacebookIcon} alt="Page Facebook Spicx" width={18} height={18} />
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" rel="noreferrer" href="#">
-                                    <Image src={InstagramIcon} alt="Instagram Spics" width={18} height={18} />
+                                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/spicx.be/">
+                                    <Image src={InstagramIcon} alt="Instagram Spicx" width={18} height={18} />
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
-                                    <Image src={LinkedinIcon} alt="LinkedIn Spics" width={18} height={18} />
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/spicx">
+                                    <Image src={LinkedinIcon} alt="LinkedIn Spicx" width={18} height={18} />
                                 </a>
                             </li>
                         </ul>
@@ -100,7 +100,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/politique-confidentalite">
+                                <Link href="/politique-confidentialite">
                                     <a>Politique de confidentialité</a>
                                 </Link>
                             </li>
@@ -109,10 +109,10 @@ export default function Footer() {
                 </div>
             </div>
             <div className={style.footer__logo}>
-                <Image src={Logo} alt="Logo Spics" />
+                <Image src={Logo} alt="Logo Spicx" width={176} height={263} />
             </div>
             <div className={style.footer__copyright}>
-                <p><span className={style.footer__copyright__symbol}>©</span> Spics - 2022</p>
+                <p><span className={style.footer__copyright__symbol}>©</span> Spicx - 2022</p>
             </div>
         </footer>
     )

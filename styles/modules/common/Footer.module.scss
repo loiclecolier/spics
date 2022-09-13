@@ -106,6 +106,10 @@
 
     &__logo {
         text-align: center;
+
+        img {
+            width: 120px !important;
+        }
     }
 
     &__copyright {

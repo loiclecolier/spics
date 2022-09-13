@@ -53,8 +53,8 @@ export default function Home() {
         <>
           <button style={{position: "absolute", bottom: 30, right: 30}}onClick={signOut}>Se déconnecter</button>
           <Head>
-            <title>Spics - Création de site web à Tournai et Mouscron</title>
-            <meta name="description" content="Vous êtes indépendant et vous avez besoin d'un site web ? Ne cherchez plus et faites confiance à Spics pour vous accompagner dans votre projet !" />
+            <title>Spicx - Création de site web à Tournai et Mouscron</title>
+            <meta name="description" content="Vous êtes indépendant et vous avez besoin d'un site web ? Ne cherchez plus et faites confiance à Spicx pour vous accompagner dans votre projet !" />
 
             {/* Favicons */}
             <link

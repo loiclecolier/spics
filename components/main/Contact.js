@@ -150,7 +150,7 @@ export default function Contact() {
             </div>
             <div className={style.contact__form__block}>
                 <button type="submit" disabled={loading} className="btnPrimary">{buttonText}</button>
-                {showFailureMessage && <p className={`${style.error} ${style.errorForm}`}>Une erreur s&apos;est produite.<br/>Réessayez ou contactez-nous à <a href="mailto:contact@be-spics.com">contact@be-spics.com</a>.</p>}
+                {showFailureMessage && <p className={`${style.error} ${style.errorForm}`}>Une erreur s&apos;est produite.<br/>Réessayez ou contactez-nous à <a href="mailto:contact@spicx.be">contact@spicx.be</a>.</p>}
             </div>
             {showSuccessMessage && <>
                 <div className={style.overlaySuccessMessage}></div>
