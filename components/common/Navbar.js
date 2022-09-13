@@ -11,7 +11,7 @@ import Link from 'next/link';
 import * as Scroll from 'react-scroll';
 import { useRouter } from 'next/router'
 
-export default function Navbar() {
+export default function Navbar({toggleDesk, setToggleDesk}) {
 
   // open/close nav mobile
   const [toggle, setToggle] = useState(false);
@@ -20,10 +20,12 @@ export default function Navbar() {
   };
 
   // open/close nav desktop/tablet
-  const [toggleDesk, setToggleDesk] = useState(false);
-  const handleNavDesk = () => {
-    setToggleDesk(!toggleDesk);
+  const openNavDesk = () => {
+    setToggleDesk(true);
   };
+  const closeNavDesk = () => {
+    if (toggleDesk) setToggleDesk(false);
+  }
 
   // get screen size
   const size = useWindowSize();
@@ -195,27 +197,27 @@ export default function Navbar() {
                   <a className={style.navbar__menu__link}>SERVICES</a>
                 </Link>
               }
-              <Image src={DropMenuIcon} alt="Dérouler le menu des services" width={25} height={25} onClick={handleNavDesk} className={style.navbar__menu__link__drop} />
+              <Image src={DropMenuIcon} alt="Dérouler le menu des services" width={25} height={25} onClick={openNavDesk} className={style.navbar__menu__link__drop} />
               {toggleDesk &&
                 <ul className={style.navbar__menu__submenu}>
                   <li>
                     <Link href="/services/ux-ui-design">
-                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>UX / UI Design</a>
+                      <a className={style.navbar__menu__submenu__link} onClick={closeNavDesk}>UX / UI Design</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services/creation-site-web">
-                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Création de site web</a>
+                      <a className={style.navbar__menu__submenu__link} onClick={closeNavDesk}>Création de site web</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services/referencement-seo">
-                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Référencement (SEO)</a>
+                      <a className={style.navbar__menu__submenu__link} onClick={closeNavDesk}>Référencement (SEO)</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services/hebergement-maintenance">
-                      <a className={style.navbar__menu__submenu__link} onClick={handleNavDesk}>Hébergement &amp; Maintenance</a>
+                      <a className={style.navbar__menu__submenu__link} onClick={closeNavDesk}>Hébergement &amp; Maintenance</a>
                     </Link>
                   </li>
                 </ul>
