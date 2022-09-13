@@ -16,8 +16,8 @@ export default function HebergementMaintenance() {
   return (
     <>
       <Head>
-          <title>Spics - Référencement (SEO)</title>
-          <meta name="description" content="Faites confiance à Spics pour optimiser le référencement naturel de votre site et augmenter la visibilité de votre activité" />
+          <title>Spicx - Référencement (SEO)</title>
+          <meta name="description" content="Faites confiance à Spicx pour optimiser le référencement naturel de votre site et augmenter la visibilité de votre activité" />
       </Head>
       <Hero
         title="RÉFÉRENCEMENT (SEO)"

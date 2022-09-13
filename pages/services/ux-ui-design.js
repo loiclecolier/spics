@@ -15,8 +15,8 @@ export default function UXUIDesign() {
   return (
     <>
       <Head>
-          <title>Spics - UX / UI Design</title>
-          <meta name="description" content="Faites confiance à Spics pour offrir à vos utilisateurs une expérience intuitive et agréable avec un design à l’image de votre activité" />
+          <title>Spicx - UX / UI Design</title>
+          <meta name="description" content="Faites confiance à Spicx pour offrir à vos utilisateurs une expérience intuitive et agréable avec un design à l’image de votre activité" />
       </Head>
       <Hero
         title="UX / UI DESIGN"

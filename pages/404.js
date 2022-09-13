@@ -16,7 +16,7 @@ export default function Error404() {
 
     return (<>
         <Head>
-            <title>Spics - Erreur 404</title>
+            <title>Spicx - Erreur 404</title>
             <meta name="robots" content="noindex, nofollow" />
         </Head>
         <div>

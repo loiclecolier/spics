@@ -16,25 +16,25 @@ export default function Hero() {
         <nav className={style.hero__menuSocialNetworks}>
           <ul>
             <li>
-              <a target="_blank" rel="noreferrer" href="#">
-                <Image src={FacebookIcon} alt="Page Facebook Spics" width={15} height={15} />
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100085689700690">
+                <Image src={FacebookIcon} alt="Page Facebook Spicx" width={15} height={15} />
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noreferrer"  href="#">
-                <Image src={InstagramIcon} alt="Instagram Spics" width={15} height={15} />
+              <a target="_blank" rel="noreferrer"  href="https://www.instagram.com/spicx.be/">
+                <Image src={InstagramIcon} alt="Instagram Spicx" width={15} height={15} />
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/be-spics">
-                <Image src={LinkedinIcon} alt="LinkedIn Spics" width={15} height={15} />
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/spicx">
+                <Image src={LinkedinIcon} alt="LinkedIn Spicx" width={15} height={15} />
               </a>
             </li>
           </ul>
         </nav>
         <main className={style.hero__main}>
             <div className={style.hero__main__titles}> 
-                <h1>SPICS <span className={style.hero__main__titles__mobile}>Création de site web</span></h1>
+                <h1>SPICX <span className={style.hero__main__titles__mobile}>Création de site web</span></h1>
                 <div className={style.hero__main__titles__mobile}>Tournai et Mouscron</div>
                 <h2 className={style.hero__main__titles__desktop}>Création de site web à Tournai et Mouscron</h2>
                 <h2>Au service des indépendants et des <br/>petites entreprises</h2>
@@ -46,7 +46,7 @@ export default function Hero() {
         </main>
         <Scroll.Link to="services" spy={true} smooth={true} offset={-50} duration={1000} className={style.hero__discover}>
           <Image src={ScrollDownIcon} alt="" aria-hidden="true" focusable="false" width={20} height={20}/>
-          <span>DÉCOUVRIR SPICS</span>
+          <span>DÉCOUVRIR SPICX</span>
         </Scroll.Link>
     </div>
   )

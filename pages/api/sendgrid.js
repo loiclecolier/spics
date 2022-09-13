@@ -5,9 +5,9 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
-      to: "contact@be-spics.com",
-      from: "contact@be-spics.com",
-      subject: "Spics - Nouveau message",
+      to: "contact@spicx.be",
+      from: "contact@spicx.be",
+      subject: "Spicx - Nouveau message",
       html: `
         <h3>Nouveau message de ${req.body.firstname} ${req.body.name}</h3>
         <ul style="list-style-type: none">

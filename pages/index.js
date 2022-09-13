@@ -10,11 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Spics - Création de site web à Tournai et Mouscron</title>
-        <meta name="description" content="Vous êtes indépendant et vous avez besoin d'un site web ? Ne cherchez plus et faites confiance à Spics pour vous accompagner dans votre projet !" />
-
-        {/* Validation Google Search Console */}
-        <meta name="google-site-verification" content="M-QnsEBqljAj9gEMCNfILrBNzt1E1DNXyOtn2num5fI" />
+        <title>Spicx - Création de site web à Tournai et Mouscron</title>
+        <meta name="description" content="Vous êtes indépendant et vous avez besoin d'un site web ? Ne cherchez plus et faites confiance à Spicx pour vous accompagner dans votre projet !" />
 
         {/* Favicons */}
         <link
