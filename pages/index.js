@@ -13,6 +13,9 @@ export default function Home() {
         <title>Spicx - Création de site web à Tournai et Mouscron</title>
         <meta name="description" content="Vous êtes indépendant et vous avez besoin d'un site web ? Ne cherchez plus et faites confiance à Spicx pour vous accompagner dans votre projet !" />
 
+        {/* Add meta tag for Google Search Console */}
+        <meta name="google-site-verification" content="BqNDckUJwVAFPoCFfJl59AOkTpLlsx3U-agnHJsyC1g" />
+
         {/* Favicons */}
         <link
           rel="apple-touch-icon"
