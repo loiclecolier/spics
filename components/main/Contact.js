@@ -152,16 +152,16 @@ export default function Contact() {
                 <button type="submit" disabled={loading} className="btnPrimary">{buttonText}</button>
                 {showFailureMessage && <p className={`${style.error} ${style.errorForm}`}>Une erreur s&apos;est produite.<br/>Réessayez ou contactez-nous à <a href="mailto:contact@spicx.be">contact@spicx.be</a>.</p>}
             </div>
-            {showSuccessMessage && <>
-                <div className={style.overlaySuccessMessage}></div>
-                <div className={style.successMessage}>
-                    <div className={style.successMessage__icon}>&#10004;</div>
-                    <h3>Merci pour votre message</h3>
-                    <p>Nous allons traiter votre demande au plus vite. À bientôt !</p>
-                    <button className="btnPrimary" onClick={() => setShowSuccessMessage(false)}>Fermer</button>
-                </div>
-            </> }
         </form>
+        {showSuccessMessage && <>
+            <div className={style.overlaySuccessMessage}></div>
+            <div className={style.successMessage}>
+                <div className={style.successMessage__icon}>&#10004;</div>
+                <h3>Merci pour votre message</h3>
+                <p>Nous allons traiter votre demande au plus vite. À bientôt !</p>
+                <button className="btnPrimary" onClick={() => setShowSuccessMessage(false)}>Fermer</button>
+            </div>
+        </> }
     </section>
   )
 }
