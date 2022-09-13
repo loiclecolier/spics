@@ -8,20 +8,14 @@ import LinkedinIcon from '../../public/assets/icons/linkedin-colore.svg';
 import Link from 'next/link';
 import * as Scroll from 'react-scroll';
 import { useRouter } from 'next/router';
-/* DEV CONFIG */
-import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Footer() {
-
-    /* DEV CONFIG */
-    const { data: session, status } = useSession()
 
     // get URL
     const router = useRouter();
     const page = router.pathname;
     
   return (
-    session && (
         <footer className={style.footer} id="footer">
             <div className={style.footer__block}>
                 <div className={style.footer__block__contact}>
@@ -116,5 +110,4 @@ export default function Footer() {
             </div>
         </footer>
     )
-  )
 }

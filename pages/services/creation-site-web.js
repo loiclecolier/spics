@@ -16,13 +16,6 @@ import TargetIcon from '../../public/assets/icons/competences/target.svg'
 import SpinningArrowsIcon from '../../public/assets/icons/competences/spinning-arrows.svg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import WordPressImage from '../../public/assets/img/services/wordpress.jpg';
-import EcommerceImage from '../../public/assets/img/services/ecommerce.jpg';
-import SiteVitrineImage from '../../public/assets/img/services/site-vitrine.jpg';
-import SiteReservationImage from '../../public/assets/img/services/site-reservation.jpg';
-import BlogImage from '../../public/assets/img/services/blog.jpg';
-import AutresImage from '../../public/assets/img/services/autres.jpg';
-import Image from 'next/image'
 
 export default function CreationSiteWeb() {
   return (
