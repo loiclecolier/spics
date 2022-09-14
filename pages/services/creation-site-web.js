@@ -31,7 +31,7 @@ export default function CreationSiteWeb() {
       />
       <main id="creation" className={style.creation}>
         <section className={style.creation__competences}>
-          <h2 data-aos="fade-up" className="titleService">Nos Compétences</h2>
+          <h2 className="titleService">Nos Compétences</h2>
           <div className={style.creation__competences__list}>
             <Competence
               img={PaintShapesIcon}
@@ -76,7 +76,7 @@ export default function CreationSiteWeb() {
           </div>
         </section>
 
-        <section className={style.creation__carousel} data-aos="fade-up" >
+        <section className={style.creation__carousel}>
           <Carousel
             showStatus={false}
             showThumbs={false}

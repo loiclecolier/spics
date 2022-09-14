@@ -27,9 +27,9 @@ export default function HebergementMaintenance() {
     />
     <main className={style.maintenance}>
         <section className={style.maintenance__description}>
-          <h2 data-aos="fade-up" className="titleService">L&apos;hébergement et la maintenance, c&apos;est quoi ?</h2>
-          <div data-aos="fade-up" className={style.maintenance__description__content}>
-              <div data-aos="fade-up" className={style.maintenance__description__text1}>
+          <h2 className="titleService">L&apos;hébergement et la maintenance, c&apos;est quoi ?</h2>
+          <div className={style.maintenance__description__content}>
+              <div className={style.maintenance__description__text1}>
                 <p>
                   Pour avoir un site web sur Internet, il doit être <strong>hébergé</strong> sur des machines, appelées <strong>serveurs</strong>, allumées 24h/24h 7j/7j pour permettre à vos visiteurs d’accéder à votre site à tout moment.
                 </p>
@@ -40,7 +40,7 @@ export default function HebergementMaintenance() {
                   <strong>Nous gérons pour vous l’hébergement de votre site et votre nom de domaine !</strong>
                 </p>
               </div>
-            <div data-aos="fade-up" className={style.maintenance__description__text2}>
+            <div className={style.maintenance__description__text2}>
               <p>En plus de ça, un site web doit être maintenu à jour régulièrement :</p>
               <ul>
                 <li>Ajout de contenu</li>
@@ -59,7 +59,7 @@ export default function HebergementMaintenance() {
         </section>
 
         <section className={style.maintenance__competences}>
-          <h2 data-aos="fade-up" className="titleService">Nos Compétences</h2>
+          <h2 className="titleService">Nos Compétences</h2>
           <div className={style.maintenance__competences__list}>
             <Competence
               img={HundredPercentIcon}

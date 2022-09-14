@@ -4,7 +4,7 @@ import style from '../../styles/modules/services/Competence.module.scss'
 
 export default function Competence(props) {
   return (
-    <div data-aos="fade-up" className={style.competence}>
+    <div className={style.competence}>
         <div className={style.competence__container}>
             <Image
                 src={props.img}
