@@ -158,7 +158,9 @@ export default function Contact() {
             <div className={style.successMessage}>
                 <div className={style.successMessage__icon}>&#10004;</div>
                 <h3>Merci pour votre message</h3>
-                <p>Nous allons traiter votre demande au plus vite. À bientôt !</p>
+                <p>Nous allons traiter votre demande au plus vite.
+                <br/>⚠️ Vérifiez vos courriers indésirables (spams).</p>
+                <p>À bientôt !</p>
                 <button className="btnPrimary" onClick={() => setShowSuccessMessage(false)}>Fermer</button>
             </div>
         </> }
