@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Hero from '../components/services/Hero'
 import Error404Img from '../public/assets/img/error404.jpg'
 import Head from 'next/head';
