@@ -1,18 +1,9 @@
 import React, { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import Hero from '../components/services/Hero'
 import Error404Img from '../public/assets/img/error404.jpg'
 import Head from 'next/head';
 
 export default function Error404() {
-
-    const router = useRouter();
-
-    useEffect(() => {
-        setTimeout(() => {
-            router.push('/');
-        }, 3000)
-    }, [router])
 
     return (<>
         <Head>
@@ -21,8 +12,8 @@ export default function Error404() {
         </Head>
         <div>
             <Hero 
-                title="ERREUR 404 - PAGE INTROUVABLE"
-                subtitle="Redirection vers la page d'accueil dans quelques instants..."
+                title="ERREUR 404"
+                subtitle="La page recherché n'existe pas"
                 img={Error404Img}
             />
         </div>
