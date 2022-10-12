@@ -40,7 +40,7 @@ export default function MentionsLegales() {
             <li><strong>Propriétaire</strong> :
                 <ul>
                     <li>EPP Spicx</li>
-                    <li>Numéro de TVA : A compléter</li>
+                    <li>Numéro de TVA : BE 0791.905.426</li>
                     <li>59B Rue des Saules 7730 Néchin</li>
                     <li>contact@spicx.be</li>
                     <li>+32 478 65 18 87</li>
