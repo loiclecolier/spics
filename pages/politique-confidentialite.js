@@ -41,8 +41,8 @@ export default function PolitiqueConfidentalite() {
             <li>Informations techniques/commerciales à transmettre au client</li>
             <li>Communication de ces informations à des sous-traitants/partenaires devant intervenir expressément sur un dossier client</li>
         </ul>
-        <p>Les données sont conservées dans notre système, sans date de fin définie. Si le client souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en nous contactant par mail à cette adresse : contact@spicx.be. Si les données personnelles sont intimement liées à une facture émise, Spicx conservera ses données dans un délai qui sera en adéquation avec le délai comptable belge légal en vigueur à la date de la demande.</p>
-        <p>Le client peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be.</p>
+        <p>Les données sont conservées dans notre système, sans date de fin définie. Si le client souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en nous contactant par mail à cette adresse : contact@spicx.be (indisponible). Si les données personnelles sont intimement liées à une facture émise, Spicx conservera ses données dans un délai qui sera en adéquation avec le délai comptable belge légal en vigueur à la date de la demande.</p>
+        <p>Le client peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be (indisponible).</p>
             
         <h3>Gestion des données personnelles des visiteurs</h3>   
         <p>Les données personnelles des visiteurs de <a href="https://spicx.be">https://spicx.be</a> sont les suivantes :</p>
@@ -56,8 +56,8 @@ export default function PolitiqueConfidentalite() {
             <li>Prendre contact avec un prospect. Une application tierce est utilisée pour cette finalité : <a href="https://sendgrid.com/" target="_blank" rel="noreferrer">SendGrid</a> (<a href="https://sendgrid.com/resource/general-data-protection-regulation-2/" target="_blank" rel="noreferrer">voir leur politique de confidentialité.</a>)</li>
             <li>Analyser le trafic du site</li>
         </ul>
-        <p>Les données sont conservées dans notre système, sans date de fin définie. Si l&apos;utilisateur souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en contactant Spicx par mail à cette adresse : contact@spicx.be.</p>
-        <p>L&apos;utilisateur peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be.</p>
+        <p>Les données sont conservées dans notre système, sans date de fin définie. Si l&apos;utilisateur souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en contactant Spicx par mail à cette adresse : contact@spicx.be (indisponible).</p>
+        <p>L&apos;utilisateur peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be (indisponible).</p>
         <p>Certaines applications présentes sur le site <a href="https://spicx.be">https://spicx.be</a> sont susceptibles de collecter des données personnelles :</p>
         <ul>
             <li><a href="https://sendgrid.com/" target="_blank" rel="noreferrer">SendGrid</a> (<a href="https://sendgrid.com/resource/general-data-protection-regulation-2/" target="_blank" rel="noreferrer">voir leur politique de confidentialité</a>)</li>

@@ -41,22 +41,21 @@ export default function MentionsLegales() {
                 <ul>
                     <li>EPP Spicx</li>
                     <li>Numéro de TVA : BE 0791.905.426</li>
-                    <li>59B Rue des Saules 7730 Néchin</li>
-                    <li>contact@spicx.be</li>
-                    <li>+32 478 65 18 87</li>
+                    {/* <li>59B Rue des Saules 7730 Néchin</li> */}
+                    <li>contact@spicx.be (indisponible)</li>
                 </ul>
             </li>
             <li><strong>Responsable publication</strong> :
                 <ul>
                     <li>Loïc Lécolier</li>
-                    <li>contact@spicx.be</li>
+                    <li>contact@spicx.be (indisponible)</li>
                     <li>Le responsable publication est une personne physique ou une personne morale.</li>
                 </ul>
             </li>
             <li><strong>Webmaster</strong> :
                 <ul>
                     <li>Loïc Lécolier</li>
-                    <li>contact@spicx.be</li>
+                    <li>contact@spicx.be (indisponible)</li>
                 </ul>
             </li>
             <li><strong>Hébergeur</strong> :
@@ -69,7 +68,7 @@ export default function MentionsLegales() {
             <li><strong>Délégué à la protection des données</strong> :
                 <ul>
                     <li>Loïc Lécolier</li>
-                    <li>contact@spicx.be</li>
+                    <li>contact@spicx.be (indisponible)</li>
                 </ul>
             </li>
         </ul>
@@ -135,8 +134,8 @@ export default function MentionsLegales() {
             <li>Informations techniques/commerciales à transmettre au client</li>
             <li>Communication de ces informations à des sous-traitants/partenaires devant intervenir expressément sur un dossier client</li>
         </ul>
-        <p>Les données sont conservées dans notre système, sans date de fin définie. Si le client souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en nous contactant par mail à cette adresse : contact@spicx.be. Si les données personnelles sont intimement liées à une facture émise, Spicx conservera ses données dans un délai qui sera en adéquation avec le délai comptable belge légal en vigueur à la date de la demande.</p>
-        <p>Le client peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be.</p>
+        <p>Les données sont conservées dans notre système, sans date de fin définie. Si le client souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en nous contactant par mail à cette adresse : contact@spicx.be (indisponible). Si les données personnelles sont intimement liées à une facture émise, Spicx conservera ses données dans un délai qui sera en adéquation avec le délai comptable belge légal en vigueur à la date de la demande.</p>
+        <p>Le client peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be (indisponible).</p>
             
         <h3>7.2. Gestion des données personnelles des visiteurs</h3>   
         <p>Les données personnelles des visiteurs de <a href="https://spicx.be">https://spicx.be</a> sont les suivantes :</p>
@@ -150,8 +149,8 @@ export default function MentionsLegales() {
             <li>Prendre contact avec un prospect. Une application tierce est utilisée pour cette finalité : <a href="https://sendgrid.com/" target="_blank" rel="noreferrer">SendGrid</a> (<a href="https://sendgrid.com/resource/general-data-protection-regulation-2/" target="_blank" rel="noreferrer">voir leur politique de confidentialité.</a>)</li>
             <li>Analyser le trafic du site</li>
         </ul>
-        <p>Les données sont conservées dans notre système, sans date de fin définie. Si l&apos;utilisateur souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en contactant Spicx par mail à cette adresse : contact@spicx.be.</p>
-        <p>L&apos;utilisateur peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be.</p>
+        <p>Les données sont conservées dans notre système, sans date de fin définie. Si l&apos;utilisateur souhaite utiliser son droit à la rectification ou à l’oubli, il pourra le faire en contactant Spicx par mail à cette adresse : contact@spicx.be (indisponible).</p>
+        <p>L&apos;utilisateur peut demander à tout moment à Spicx un inventaire des données personnelles en réalisant une demande par mail à cette adresse : contact@spicx.be (indisponible).</p>
         <p>Certaines applications présentes sur le site <a href="https://spicx.be">https://spicx.be</a> sont susceptibles de collecter des données personnelles :</p>
         <ul>
             <li><a href="https://sendgrid.com/" target="_blank" rel="noreferrer">SendGrid</a> (<a href="https://sendgrid.com/resource/general-data-protection-regulation-2/" target="_blank" rel="noreferrer">voir leur politique de confidentialité</a>)</li>

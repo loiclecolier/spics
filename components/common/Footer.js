@@ -23,9 +23,8 @@ export default function Footer() {
                     <address>
                         <ul>
                             <li>Loïc Lécolier</li>
-                            <li><a href="tel:+32478651887">+32 478 65 18 87</a></li>
-                            <li><a href="mailto:contact@spicx.be">contact@spicx.be</a></li>
-                            <li>7730 Néchin <br/>59B Rue des Saules</li>
+                            {/* <li>7730 Néchin <br/>59B Rue des Saules</li> */}
+                            <li>loic.lecolier@gmail.com</li>
                         </ul>
                     </address>
                     <nav className={style.footer__block__contact__menuSocialNetworks}>
